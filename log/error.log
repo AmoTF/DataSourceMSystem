@@ -1,0 +1,178 @@
+2018-03-12 19:47:21,492 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:47:21,494 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:47:21,494 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:47:21,495 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 19:48:30,584 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:48:30,585 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:48:30,586 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:48:30,587 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 19:50:43,175 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:50:43,192 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:50:43,192 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:50:43,193 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 19:56:56,941 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:56:56,992 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:56:56,992 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:56:56,993 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 19:58:52,871 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:58:52,873 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:58:52,873 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:58:52,874 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:05:16,149 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:05:16,150 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:05:16,152 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:05:16,152 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:07:32,495 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:07:32,497 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:07:32,497 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:07:32,498 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:11:47,481 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:11:47,482 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:11:47,483 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:11:47,484 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:17:08,400 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:17:08,400 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:17:08,400 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:17:08,400 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:18:55,871 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:18:55,871 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:18:55,871 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:18:55,871 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:19:21,882 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:19:21,882 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:19:21,882 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:19:21,882 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:23:11,316 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://123.207.227.116:9000/bigdata/bigdata already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:146)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:266)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:139)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1287)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1754)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1287)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1308)
+	at org.apache.sqoop.mapreduce.ImportJobBase.doSubmitJob(ImportJobBase.java:196)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runJob(ImportJobBase.java:169)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runImport(ImportJobBase.java:266)
+	at org.apache.sqoop.manager.SqlManager.importTable(SqlManager.java:673)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:497)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  

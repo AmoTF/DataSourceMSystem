@@ -1,0 +1,1149 @@
+2018-03-12 19:47:16,723 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 19:47:16,762 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:47:19,479 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 19:47:19,682 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 19:47:19,705 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:47:20,110 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 19:47:20,176 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 19:47:20,179 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 19:47:21,242 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:47:21,391 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:47:21,467 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 19:47:21,492 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:47:21,494 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:47:21,494 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:47:21,495 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 19:48:29,048 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 19:48:29,057 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:48:29,526 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 19:48:29,623 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 19:48:29,660 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:48:29,753 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 19:48:29,767 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 19:48:29,769 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 19:48:30,500 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:48:30,510 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:48:30,572 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 19:48:30,584 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:48:30,585 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:48:30,586 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:48:30,587 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 19:50:41,799 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 19:50:41,877 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:50:42,201 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 19:50:42,295 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 19:50:42,325 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:50:42,411 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 19:50:42,425 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 19:50:42,426 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 19:50:43,093 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:50:43,104 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:50:43,164 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 19:50:43,175 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:50:43,192 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:50:43,192 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:50:43,193 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 19:56:55,604 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 19:56:55,610 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:56:55,953 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 19:56:56,041 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 19:56:56,070 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:56:56,151 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 19:56:56,165 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 19:56:56,167 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 19:56:56,869 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:56:56,879 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:56:56,933 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 19:56:56,941 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:56:56,992 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:56:56,992 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:56:56,993 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 19:58:51,459 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 19:58:51,465 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:58:51,801 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 19:58:51,923 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 19:58:51,948 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 19:58:52,041 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 19:58:52,055 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 19:58:52,056 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 19:58:52,728 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:58:52,737 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 19:58:52,861 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 19:58:52,871 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 19:58:52,873 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 19:58:52,873 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 19:58:52,874 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:05:14,880 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:05:14,886 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:05:15,183 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 20:05:15,269 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 20:05:15,294 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:05:15,384 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 20:05:15,400 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 20:05:15,402 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 20:05:16,071 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:05:16,081 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:05:16,139 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 20:05:16,149 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:05:16,150 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:05:16,152 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:05:16,152 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:06:04,086 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:07:31,249 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:07:31,254 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:07:31,547 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 20:07:31,632 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 20:07:31,655 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:07:31,736 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 20:07:31,750 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 20:07:31,751 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 20:07:32,389 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:07:32,400 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:07:32,487 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 20:07:32,495 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:07:32,497 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:07:32,497 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:07:32,498 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:11:46,192 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:11:46,198 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:11:46,505 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 20:11:46,590 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 20:11:46,616 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:11:46,699 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 20:11:46,712 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 20:11:46,714 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 20:11:47,406 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:11:47,415 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:11:47,473 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 20:11:47,481 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:11:47,482 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:11:47,483 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:11:47,484 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:17:07,121 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:17:07,128 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:17:07,426 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 20:17:07,520 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 20:17:07,536 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:17:07,614 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 20:17:07,630 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 20:17:07,630 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 20:17:08,301 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:17:08,306 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:17:08,384 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 20:17:08,400 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:17:08,400 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:17:08,400 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:17:08,400 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:18:54,614 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:18:54,621 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:18:54,905 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 20:18:54,998 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 20:18:55,014 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:18:55,108 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 20:18:55,108 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 20:18:55,108 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 20:18:55,795 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:18:55,809 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:18:55,856 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 20:18:55,871 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:18:55,871 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:18:55,871 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:18:55,871 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:19:20,412 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:19:20,422 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:19:20,751 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 20:19:20,860 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 20:19:20,876 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:19:20,970 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 20:19:20,970 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 20:19:20,985 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 20:19:21,704 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:19:21,725 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:19:21,882 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 20:19:21,882 ERROR[org.apache.sqoop.orm.CompilationManager:184] - It seems as though you are running sqoop with a JRE.
+  2018-03-12 20:19:21,882 ERROR[org.apache.sqoop.orm.CompilationManager:185] - Sqoop requires a JDK that can compile Java code.
+  2018-03-12 20:19:21,882 ERROR[org.apache.sqoop.orm.CompilationManager:186] - Please install a JDK and set $JAVA_HOME to use it.
+  2018-03-12 20:19:21,882 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: java.io.IOException: Could not start Java compiler.
+	at org.apache.sqoop.orm.CompilationManager.compile(CompilationManager.java:187)
+	at org.apache.sqoop.tool.CodeGenTool.generateORM(CodeGenTool.java:108)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:478)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:22:53,354 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:22:53,380 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:22:53,978 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 20:22:54,113 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 20:22:54,134 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:22:54,518 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 20:22:54,577 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 20:22:54,578 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 20:22:55,592 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:22:55,602 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:22:55,673 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 20:23:01,798 INFO[org.apache.sqoop.orm.CompilationManager:330] - Writing jar file: \tmp\sqoop-AMO\compile\304f40a3f68b6bdff7bbea69bb566fdb\bigdata.jar
+  2018-03-12 20:23:01,945 INFO[org.apache.sqoop.mapreduce.ImportJobBase:235] - Beginning import of bigdata
+  2018-03-12 20:23:02,651 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+  2018-03-12 20:23:02,723 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:23:05,459 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+  2018-03-12 20:23:05,769 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - session.id is deprecated. Instead, use dfs.metrics.session-id
+  2018-03-12 20:23:05,773 INFO[org.apache.hadoop.metrics.jvm.JvmMetrics:76] - Initializing JVM Metrics with processName=JobTracker, sessionId=
+  2018-03-12 20:23:11,316 ERROR[org.apache.sqoop.tool.ImportTool:613] - Encountered IOException running import job: org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://123.207.227.116:9000/bigdata/bigdata already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:146)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:266)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:139)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1287)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1754)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1287)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1308)
+	at org.apache.sqoop.mapreduce.ImportJobBase.doSubmitJob(ImportJobBase.java:196)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runJob(ImportJobBase.java:169)
+	at org.apache.sqoop.mapreduce.ImportJobBase.runImport(ImportJobBase.java:266)
+	at org.apache.sqoop.manager.SqlManager.importTable(SqlManager.java:673)
+	at org.apache.sqoop.tool.ImportTool.importTable(ImportTool.java:497)
+	at org.apache.sqoop.tool.ImportTool.run(ImportTool.java:605)
+	at org.apache.sqoop.Sqoop.run(Sqoop.java:143)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at org.apache.sqoop.Sqoop.runSqoop(Sqoop.java:179)
+	at com.ztf.hadoop.hdfs.SqoopTest.importDataFromMysql(SqoopTest.java:62)
+	at com.ztf.hadoop.hdfs.SqoopTest.main(SqoopTest.java:114)
+
+  2018-03-12 20:25:53,238 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:25:53,245 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:25:53,555 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 20:25:53,653 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 20:25:53,669 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:25:53,747 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 20:25:53,763 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 20:25:53,763 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 20:25:54,403 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:25:54,416 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:25:54,478 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 20:25:56,447 INFO[org.apache.sqoop.orm.CompilationManager:330] - Writing jar file: \tmp\sqoop-AMO\compile\8a3efd3f79614a4c192fa6e532f3ce13\bigdata.jar
+  2018-03-12 20:25:56,529 INFO[org.apache.sqoop.mapreduce.ImportJobBase:235] - Beginning import of bigdata
+  2018-03-12 20:25:56,935 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+  2018-03-12 20:25:56,951 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:25:58,317 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+  2018-03-12 20:25:58,362 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - session.id is deprecated. Instead, use dfs.metrics.session-id
+  2018-03-12 20:25:58,362 INFO[org.apache.hadoop.metrics.jvm.JvmMetrics:76] - Initializing JVM Metrics with processName=JobTracker, sessionId=
+  2018-03-12 20:26:12,214 INFO[org.apache.sqoop.mapreduce.db.DBInputFormat:192] - Using read commited transaction isolation
+  2018-03-12 20:26:12,490 INFO[org.apache.hadoop.mapreduce.JobSubmitter:198] - number of splits:1
+  2018-03-12 20:26:12,590 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:26:13,215 INFO[org.apache.hadoop.mapreduce.JobSubmitter:287] - Submitting tokens for job: job_local696773970_0001
+  2018-03-12 20:26:26,786 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573655\sqoop-1.4.6.jar <- D:\Users\AMO\workspace\DataSourceMSystem/sqoop-1.4.6.jar
+  2018-03-12 20:26:30,327 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:30,327 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573655\sqoop-1.4.6.jar <- D:\Users\AMO\workspace\DataSourceMSystem/sqoop-1.4.6.jar
+  2018-03-12 20:26:30,332 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/C:/Users/AMO/.m2/repository/org/apache/sqoop/sqoop/1.4.6/sqoop-1.4.6.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573655/sqoop-1.4.6.jar
+  2018-03-12 20:26:30,332 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573656\kite-hadoop-compatibility-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 20:26:31,609 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:31,616 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573656\kite-hadoop-compatibility-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 20:26:31,616 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-hadoop-compatibility-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573656/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 20:26:31,836 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573657\parquet-column-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-column-1.4.1.jar
+  2018-03-12 20:26:31,946 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:31,946 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573657\parquet-column-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-column-1.4.1.jar
+  2018-03-12 20:26:31,946 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-column-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573657/parquet-column-1.4.1.jar
+  2018-03-12 20:26:31,946 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573658\parquet-generator-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-generator-1.4.1.jar
+  2018-03-12 20:26:32,133 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,133 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573658\parquet-generator-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-generator-1.4.1.jar
+  2018-03-12 20:26:32,133 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-generator-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573658/parquet-generator-1.4.1.jar
+  2018-03-12 20:26:32,133 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573659\kite-data-mapreduce-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 20:26:32,196 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,196 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573659\kite-data-mapreduce-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 20:26:32,196 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-data-mapreduce-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573659/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 20:26:32,196 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573660\slf4j-api-1.6.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/slf4j-api-1.6.1.jar
+  2018-03-12 20:26:32,258 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,258 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573660\slf4j-api-1.6.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/slf4j-api-1.6.1.jar
+  2018-03-12 20:26:32,258 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/slf4j-api-1.6.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573660/slf4j-api-1.6.1.jar
+  2018-03-12 20:26:32,274 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573661\mysql-connector-java-5.1.31.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.31.jar
+  2018-03-12 20:26:32,342 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,342 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573661\mysql-connector-java-5.1.31.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.31.jar
+  2018-03-12 20:26:32,342 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/mysql-connector-java-5.1.31.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573661/mysql-connector-java-5.1.31.jar
+  2018-03-12 20:26:32,342 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573662\commons-codec-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-codec-1.4.jar
+  2018-03-12 20:26:32,389 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,389 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573662\commons-codec-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-codec-1.4.jar
+  2018-03-12 20:26:32,389 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-codec-1.4.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573662/commons-codec-1.4.jar
+  2018-03-12 20:26:32,389 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573663\mysql-connector-java-5.1.9.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.9.jar
+  2018-03-12 20:26:32,452 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,452 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573663\mysql-connector-java-5.1.9.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.9.jar
+  2018-03-12 20:26:32,452 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/C:/Users/AMO/.m2/repository/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573663/mysql-connector-java-5.1.9.jar
+  2018-03-12 20:26:32,452 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573664\hsqldb-1.8.0.10.jar <- D:\Users\AMO\workspace\DataSourceMSystem/hsqldb-1.8.0.10.jar
+  2018-03-12 20:26:32,512 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,512 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573664\hsqldb-1.8.0.10.jar <- D:\Users\AMO\workspace\DataSourceMSystem/hsqldb-1.8.0.10.jar
+  2018-03-12 20:26:32,512 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/hsqldb-1.8.0.10.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573664/hsqldb-1.8.0.10.jar
+  2018-03-12 20:26:32,512 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573665\parquet-hadoop-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-hadoop-1.4.1.jar
+  2018-03-12 20:26:32,662 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,662 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573665\parquet-hadoop-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-hadoop-1.4.1.jar
+  2018-03-12 20:26:32,678 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-hadoop-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573665/parquet-hadoop-1.4.1.jar
+  2018-03-12 20:26:32,678 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573666\parquet-format-2.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-format-2.0.0.jar
+  2018-03-12 20:26:32,726 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,726 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573666\parquet-format-2.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-format-2.0.0.jar
+  2018-03-12 20:26:32,726 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-format-2.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573666/parquet-format-2.0.0.jar
+  2018-03-12 20:26:32,726 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573667\ant-contrib-1.0b3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-contrib-1.0b3.jar
+  2018-03-12 20:26:32,789 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,789 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573667\ant-contrib-1.0b3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-contrib-1.0b3.jar
+  2018-03-12 20:26:32,789 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/ant-contrib-1.0b3.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573667/ant-contrib-1.0b3.jar
+  2018-03-12 20:26:32,789 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573668\paranamer-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/paranamer-2.3.jar
+  2018-03-12 20:26:32,867 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,867 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573668\paranamer-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/paranamer-2.3.jar
+  2018-03-12 20:26:32,867 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/paranamer-2.3.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573668/paranamer-2.3.jar
+  2018-03-12 20:26:32,867 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573669\commons-io-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-io-1.4.jar
+  2018-03-12 20:26:32,929 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,929 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573669\commons-io-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-io-1.4.jar
+  2018-03-12 20:26:32,929 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-io-1.4.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573669/commons-io-1.4.jar
+  2018-03-12 20:26:32,929 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573670\jackson-mapper-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 20:26:32,976 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:32,976 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573670\jackson-mapper-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 20:26:32,976 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-mapper-asl-1.9.13.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573670/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 20:26:32,976 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573671\parquet-jackson-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-jackson-1.4.1.jar
+  2018-03-12 20:26:33,133 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,133 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573671\parquet-jackson-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-jackson-1.4.1.jar
+  2018-03-12 20:26:33,133 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-jackson-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573671/parquet-jackson-1.4.1.jar
+  2018-03-12 20:26:33,133 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573672\kite-data-hive-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-hive-1.0.0.jar
+  2018-03-12 20:26:33,195 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,195 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573672\kite-data-hive-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-hive-1.0.0.jar
+  2018-03-12 20:26:33,195 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-data-hive-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573672/kite-data-hive-1.0.0.jar
+  2018-03-12 20:26:33,195 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573673\kite-data-core-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-core-1.0.0.jar
+  2018-03-12 20:26:33,242 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,242 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573673\kite-data-core-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-core-1.0.0.jar
+  2018-03-12 20:26:33,242 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-data-core-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573673/kite-data-core-1.0.0.jar
+  2018-03-12 20:26:33,242 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573674\commons-compress-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-compress-1.4.1.jar
+  2018-03-12 20:26:33,342 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,342 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573674\commons-compress-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-compress-1.4.1.jar
+  2018-03-12 20:26:33,342 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-compress-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573674/commons-compress-1.4.1.jar
+  2018-03-12 20:26:33,342 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573675\commons-logging-1.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-logging-1.1.1.jar
+  2018-03-12 20:26:33,404 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,404 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573675\commons-logging-1.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-logging-1.1.1.jar
+  2018-03-12 20:26:33,404 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-logging-1.1.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573675/commons-logging-1.1.1.jar
+  2018-03-12 20:26:33,404 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573676\jackson-core-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-asl-1.9.13.jar
+  2018-03-12 20:26:33,498 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,498 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573676\jackson-core-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-asl-1.9.13.jar
+  2018-03-12 20:26:33,498 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-core-asl-1.9.13.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573676/jackson-core-asl-1.9.13.jar
+  2018-03-12 20:26:33,498 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573677\avro-1.7.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-1.7.5.jar
+  2018-03-12 20:26:33,571 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,571 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573677\avro-1.7.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-1.7.5.jar
+  2018-03-12 20:26:33,571 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/avro-1.7.5.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573677/avro-1.7.5.jar
+  2018-03-12 20:26:33,571 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573678\parquet-avro-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-avro-1.4.1.jar
+  2018-03-12 20:26:33,636 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,636 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573678\parquet-avro-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-avro-1.4.1.jar
+  2018-03-12 20:26:33,636 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-avro-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573678/parquet-avro-1.4.1.jar
+  2018-03-12 20:26:33,636 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573679\parquet-encoding-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-encoding-1.4.1.jar
+  2018-03-12 20:26:33,714 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,714 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573679\parquet-encoding-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-encoding-1.4.1.jar
+  2018-03-12 20:26:33,723 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-encoding-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573679/parquet-encoding-1.4.1.jar
+  2018-03-12 20:26:33,725 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573680\snappy-java-1.0.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/snappy-java-1.0.5.jar
+  2018-03-12 20:26:33,772 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,772 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573680\snappy-java-1.0.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/snappy-java-1.0.5.jar
+  2018-03-12 20:26:33,772 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/snappy-java-1.0.5.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573680/snappy-java-1.0.5.jar
+  2018-03-12 20:26:33,772 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573681\avro-mapred-1.7.5-hadoop2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 20:26:33,834 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,834 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573681\avro-mapred-1.7.5-hadoop2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 20:26:33,834 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/avro-mapred-1.7.5-hadoop2.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573681/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 20:26:33,834 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573682\jackson-core-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-2.3.1.jar
+  2018-03-12 20:26:33,990 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:33,990 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573682\jackson-core-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-2.3.1.jar
+  2018-03-12 20:26:33,990 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-core-2.3.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573682/jackson-core-2.3.1.jar
+  2018-03-12 20:26:33,990 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573683\parquet-common-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-common-1.4.1.jar
+  2018-03-12 20:26:34,053 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:34,053 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573683\parquet-common-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-common-1.4.1.jar
+  2018-03-12 20:26:34,053 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-common-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573683/parquet-common-1.4.1.jar
+  2018-03-12 20:26:34,053 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573684\commons-jexl-2.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-jexl-2.1.1.jar
+  2018-03-12 20:26:34,115 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:34,115 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573684\commons-jexl-2.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-jexl-2.1.1.jar
+  2018-03-12 20:26:34,115 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-jexl-2.1.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573684/commons-jexl-2.1.1.jar
+  2018-03-12 20:26:34,115 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573685\ant-eclipse-1.0-jvm1.2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 20:26:34,178 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:34,178 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573685\ant-eclipse-1.0-jvm1.2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 20:26:34,178 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/ant-eclipse-1.0-jvm1.2.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573685/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 20:26:34,178 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573686\jackson-databind-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-databind-2.3.1.jar
+  2018-03-12 20:26:34,272 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:34,272 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573686\jackson-databind-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-databind-2.3.1.jar
+  2018-03-12 20:26:34,272 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-databind-2.3.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573686/jackson-databind-2.3.1.jar
+  2018-03-12 20:26:34,272 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573687\jackson-annotations-2.3.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-annotations-2.3.0.jar
+  2018-03-12 20:26:34,318 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:34,318 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573687\jackson-annotations-2.3.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-annotations-2.3.0.jar
+  2018-03-12 20:26:34,318 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-annotations-2.3.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573687/jackson-annotations-2.3.0.jar
+  2018-03-12 20:26:34,318 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573688\opencsv-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/opencsv-2.3.jar
+  2018-03-12 20:26:34,412 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:34,412 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573688\opencsv-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/opencsv-2.3.jar
+  2018-03-12 20:26:34,412 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/opencsv-2.3.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573688/opencsv-2.3.jar
+  2018-03-12 20:26:34,412 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857573689\xz-1.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/xz-1.0.jar
+  2018-03-12 20:26:34,490 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:26:34,490 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857573689\xz-1.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/xz-1.0.jar
+  2018-03-12 20:26:34,490 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/xz-1.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857573689/xz-1.0.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573655/sqoop-1.4.6.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573656/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573657/parquet-column-1.4.1.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573658/parquet-generator-1.4.1.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573659/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573660/slf4j-api-1.6.1.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573661/mysql-connector-java-5.1.31.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573662/commons-codec-1.4.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573663/mysql-connector-java-5.1.9.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573664/hsqldb-1.8.0.10.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573665/parquet-hadoop-1.4.1.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573666/parquet-format-2.0.0.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573667/ant-contrib-1.0b3.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573668/paranamer-2.3.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573669/commons-io-1.4.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573670/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573671/parquet-jackson-1.4.1.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573672/kite-data-hive-1.0.0.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573673/kite-data-core-1.0.0.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573674/commons-compress-1.4.1.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573675/commons-logging-1.1.1.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573676/jackson-core-asl-1.9.13.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573677/avro-1.7.5.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573678/parquet-avro-1.4.1.jar
+  2018-03-12 20:26:34,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573679/parquet-encoding-1.4.1.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573680/snappy-java-1.0.5.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573681/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573682/jackson-core-2.3.1.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573683/parquet-common-1.4.1.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573684/commons-jexl-2.1.1.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573685/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573686/jackson-databind-2.3.1.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573687/jackson-annotations-2.3.0.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573688/opencsv-2.3.jar
+  2018-03-12 20:26:34,711 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857573689/xz-1.0.jar
+  2018-03-12 20:26:34,742 INFO[org.apache.hadoop.mapreduce.Job:1294] - The url to track the job: http://localhost:8080/
+  2018-03-12 20:26:34,745 INFO[org.apache.hadoop.mapreduce.Job:1339] - Running job: job_local696773970_0001
+  2018-03-12 20:26:34,745 INFO[org.apache.hadoop.mapred.LocalJobRunner:471] - OutputCommitter set in config null
+  2018-03-12 20:26:34,792 INFO[org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter:108] - File Output Committer Algorithm version is 1
+  2018-03-12 20:26:34,792 INFO[org.apache.hadoop.mapred.LocalJobRunner:489] - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+  2018-03-12 20:26:35,167 INFO[org.apache.hadoop.mapred.LocalJobRunner:448] - Waiting for map tasks
+  2018-03-12 20:26:35,167 INFO[org.apache.hadoop.mapred.LocalJobRunner:224] - Starting task: attempt_local696773970_0001_m_000000_0
+  2018-03-12 20:26:35,341 INFO[org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter:108] - File Output Committer Algorithm version is 1
+  2018-03-12 20:26:35,372 INFO[org.apache.hadoop.yarn.util.ProcfsBasedProcessTree:192] - ProcfsBasedProcessTree currently is supported only on Linux.
+  2018-03-12 20:26:35,435 INFO[org.apache.hadoop.mapred.Task:612] -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@5ea538c4
+  2018-03-12 20:26:35,450 INFO[org.apache.sqoop.mapreduce.db.DBInputFormat:192] - Using read commited transaction isolation
+  2018-03-12 20:26:35,466 INFO[org.apache.hadoop.mapred.MapTask:756] - Processing split: 1=1 AND 1=1
+  2018-03-12 20:26:35,763 INFO[org.apache.hadoop.mapreduce.Job:1360] - Job job_local696773970_0001 running in uber mode : false
+  2018-03-12 20:26:35,813 INFO[org.apache.hadoop.mapreduce.Job:1367] -  map 0% reduce 0%
+  2018-03-12 20:26:36,203 INFO[org.apache.sqoop.mapreduce.db.DBRecordReader:234] - Working on split: 1=1 AND 1=1
+  2018-03-12 20:26:36,203 INFO[org.apache.sqoop.mapreduce.db.DBRecordReader:110] - Executing query: SELECT class_id, class_name, class_month, teacher, last_mod_ts FROM bigdata AS bigdata WHERE ( 1=1 ) AND ( 1=1 )
+  2018-03-12 20:26:36,310 INFO[org.apache.sqoop.mapreduce.AutoProgressMapper:158] - Auto-progress thread is finished. keepGoing=false
+  2018-03-12 20:26:36,326 INFO[org.apache.hadoop.mapred.LocalJobRunner:591] - 
+  2018-03-12 20:26:38,291 INFO[org.apache.hadoop.mapred.Task:1038] - Task:attempt_local696773970_0001_m_000000_0 is done. And is in the process of committing
+  2018-03-12 20:26:38,336 INFO[org.apache.hadoop.mapred.LocalJobRunner:591] - 
+  2018-03-12 20:26:38,336 INFO[org.apache.hadoop.mapred.Task:1211] - Task attempt_local696773970_0001_m_000000_0 is allowed to commit now
+  2018-03-12 20:26:38,414 INFO[org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter:535] - Saved output of task 'attempt_local696773970_0001_m_000000_0' to hdfs://123.207.227.116:9000/bigdata/bigdata/_temporary/0/task_local696773970_0001_m_000000
+  2018-03-12 20:26:38,414 INFO[org.apache.hadoop.mapred.LocalJobRunner:591] - map
+  2018-03-12 20:26:38,414 INFO[org.apache.hadoop.mapred.Task:1170] - Task 'attempt_local696773970_0001_m_000000_0' done.
+  2018-03-12 20:26:38,430 INFO[org.apache.hadoop.mapred.Task:1072] - Final Counters for attempt_local696773970_0001_m_000000_0: Counters: 20
+	File System Counters
+		FILE: Number of bytes read=18750319
+		FILE: Number of bytes written=19205311
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=220
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=5
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=178
+		Total committed heap usage (bytes)=208142336
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=220
+  2018-03-12 20:26:38,430 INFO[org.apache.hadoop.mapred.LocalJobRunner:249] - Finishing task: attempt_local696773970_0001_m_000000_0
+  2018-03-12 20:26:38,430 INFO[org.apache.hadoop.mapred.LocalJobRunner:456] - map task executor complete.
+  2018-03-12 20:26:38,867 INFO[org.apache.hadoop.mapreduce.Job:1367] -  map 100% reduce 0%
+  2018-03-12 20:26:38,867 INFO[org.apache.hadoop.mapreduce.Job:1378] - Job job_local696773970_0001 completed successfully
+  2018-03-12 20:26:39,070 INFO[org.apache.hadoop.mapreduce.Job:1385] - Counters: 20
+	File System Counters
+		FILE: Number of bytes read=18750319
+		FILE: Number of bytes written=19205311
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=220
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=5
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=178
+		Total committed heap usage (bytes)=208142336
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=220
+  2018-03-12 20:26:39,117 INFO[org.apache.sqoop.mapreduce.ImportJobBase:184] - Transferred 220 bytes in 40.735 seconds (5.4008 bytes/sec)
+  2018-03-12 20:26:39,117 INFO[org.apache.sqoop.mapreduce.ImportJobBase:186] - Retrieved 5 records.
+  2018-03-12 20:31:56,898 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:31:56,915 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:31:57,198 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 20:31:57,291 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 20:31:57,307 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 20:31:57,405 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 20:31:57,421 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 20:31:57,421 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 20:31:58,049 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:31:58,062 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:31:58,109 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 20:32:00,045 INFO[org.apache.sqoop.orm.CompilationManager:330] - Writing jar file: \tmp\sqoop-AMO\compile\9efdb97e96eab7fb5c7cabcd05896e72\bigdata.jar
+  2018-03-12 20:32:00,151 INFO[org.apache.sqoop.mapreduce.ImportJobBase:235] - Beginning import of bigdata
+  2018-03-12 20:32:00,557 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+  2018-03-12 20:32:00,557 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 20:32:01,963 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+  2018-03-12 20:32:02,010 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - session.id is deprecated. Instead, use dfs.metrics.session-id
+  2018-03-12 20:32:02,010 INFO[org.apache.hadoop.metrics.jvm.JvmMetrics:76] - Initializing JVM Metrics with processName=JobTracker, sessionId=
+  2018-03-12 20:32:13,528 INFO[org.apache.sqoop.mapreduce.db.DBInputFormat:192] - Using read commited transaction isolation
+  2018-03-12 20:32:13,596 INFO[org.apache.hadoop.mapreduce.JobSubmitter:198] - number of splits:1
+  2018-03-12 20:32:13,612 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 20:32:13,794 INFO[org.apache.hadoop.mapreduce.JobSubmitter:287] - Submitting tokens for job: job_local455061628_0001
+  2018-03-12 20:32:21,232 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934014\sqoop-1.4.6.jar <- D:\Users\AMO\workspace\DataSourceMSystem/sqoop-1.4.6.jar
+  2018-03-12 20:32:26,069 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:26,069 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934014\sqoop-1.4.6.jar <- D:\Users\AMO\workspace\DataSourceMSystem/sqoop-1.4.6.jar
+  2018-03-12 20:32:26,084 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/C:/Users/AMO/.m2/repository/org/apache/sqoop/sqoop/1.4.6/sqoop-1.4.6.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934014/sqoop-1.4.6.jar
+  2018-03-12 20:32:26,085 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934015\kite-hadoop-compatibility-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 20:32:26,475 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:26,475 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934015\kite-hadoop-compatibility-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 20:32:26,475 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-hadoop-compatibility-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934015/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 20:32:26,475 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934016\parquet-column-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-column-1.4.1.jar
+  2018-03-12 20:32:26,757 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:26,757 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934016\parquet-column-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-column-1.4.1.jar
+  2018-03-12 20:32:26,757 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-column-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934016/parquet-column-1.4.1.jar
+  2018-03-12 20:32:26,757 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934017\parquet-generator-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-generator-1.4.1.jar
+  2018-03-12 20:32:26,850 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:26,850 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934017\parquet-generator-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-generator-1.4.1.jar
+  2018-03-12 20:32:26,850 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-generator-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934017/parquet-generator-1.4.1.jar
+  2018-03-12 20:32:26,866 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934018\kite-data-mapreduce-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 20:32:26,928 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:26,928 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934018\kite-data-mapreduce-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 20:32:26,928 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-data-mapreduce-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934018/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 20:32:26,928 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934019\slf4j-api-1.6.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/slf4j-api-1.6.1.jar
+  2018-03-12 20:32:26,991 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:26,991 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934019\slf4j-api-1.6.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/slf4j-api-1.6.1.jar
+  2018-03-12 20:32:26,991 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/slf4j-api-1.6.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934019/slf4j-api-1.6.1.jar
+  2018-03-12 20:32:26,991 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934020\mysql-connector-java-5.1.31.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.31.jar
+  2018-03-12 20:32:27,053 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,053 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934020\mysql-connector-java-5.1.31.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.31.jar
+  2018-03-12 20:32:27,053 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/mysql-connector-java-5.1.31.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934020/mysql-connector-java-5.1.31.jar
+  2018-03-12 20:32:27,053 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934021\commons-codec-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-codec-1.4.jar
+  2018-03-12 20:32:27,100 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,116 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934021\commons-codec-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-codec-1.4.jar
+  2018-03-12 20:32:27,116 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-codec-1.4.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934021/commons-codec-1.4.jar
+  2018-03-12 20:32:27,117 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934022\mysql-connector-java-5.1.9.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.9.jar
+  2018-03-12 20:32:27,164 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,164 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934022\mysql-connector-java-5.1.9.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.9.jar
+  2018-03-12 20:32:27,164 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/C:/Users/AMO/.m2/repository/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934022/mysql-connector-java-5.1.9.jar
+  2018-03-12 20:32:27,164 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934023\hsqldb-1.8.0.10.jar <- D:\Users\AMO\workspace\DataSourceMSystem/hsqldb-1.8.0.10.jar
+  2018-03-12 20:32:27,227 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,227 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934023\hsqldb-1.8.0.10.jar <- D:\Users\AMO\workspace\DataSourceMSystem/hsqldb-1.8.0.10.jar
+  2018-03-12 20:32:27,227 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/hsqldb-1.8.0.10.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934023/hsqldb-1.8.0.10.jar
+  2018-03-12 20:32:27,227 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934024\parquet-hadoop-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-hadoop-1.4.1.jar
+  2018-03-12 20:32:27,289 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,289 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934024\parquet-hadoop-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-hadoop-1.4.1.jar
+  2018-03-12 20:32:27,289 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-hadoop-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934024/parquet-hadoop-1.4.1.jar
+  2018-03-12 20:32:27,289 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934025\parquet-format-2.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-format-2.0.0.jar
+  2018-03-12 20:32:27,352 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,352 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934025\parquet-format-2.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-format-2.0.0.jar
+  2018-03-12 20:32:27,352 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-format-2.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934025/parquet-format-2.0.0.jar
+  2018-03-12 20:32:27,352 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934026\ant-contrib-1.0b3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-contrib-1.0b3.jar
+  2018-03-12 20:32:27,414 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,414 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934026\ant-contrib-1.0b3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-contrib-1.0b3.jar
+  2018-03-12 20:32:27,414 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/ant-contrib-1.0b3.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934026/ant-contrib-1.0b3.jar
+  2018-03-12 20:32:27,414 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934027\paranamer-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/paranamer-2.3.jar
+  2018-03-12 20:32:27,461 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,477 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934027\paranamer-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/paranamer-2.3.jar
+  2018-03-12 20:32:27,477 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/paranamer-2.3.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934027/paranamer-2.3.jar
+  2018-03-12 20:32:27,477 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934028\commons-io-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-io-1.4.jar
+  2018-03-12 20:32:27,524 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,524 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934028\commons-io-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-io-1.4.jar
+  2018-03-12 20:32:27,524 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-io-1.4.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934028/commons-io-1.4.jar
+  2018-03-12 20:32:27,524 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934029\jackson-mapper-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 20:32:27,586 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,586 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934029\jackson-mapper-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 20:32:27,586 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-mapper-asl-1.9.13.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934029/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 20:32:27,586 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934030\parquet-jackson-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-jackson-1.4.1.jar
+  2018-03-12 20:32:27,633 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,649 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934030\parquet-jackson-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-jackson-1.4.1.jar
+  2018-03-12 20:32:27,649 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-jackson-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934030/parquet-jackson-1.4.1.jar
+  2018-03-12 20:32:27,649 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934031\kite-data-hive-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-hive-1.0.0.jar
+  2018-03-12 20:32:27,695 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,695 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934031\kite-data-hive-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-hive-1.0.0.jar
+  2018-03-12 20:32:27,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-data-hive-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934031/kite-data-hive-1.0.0.jar
+  2018-03-12 20:32:27,695 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934032\kite-data-core-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-core-1.0.0.jar
+  2018-03-12 20:32:27,789 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,789 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934032\kite-data-core-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-core-1.0.0.jar
+  2018-03-12 20:32:27,789 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-data-core-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934032/kite-data-core-1.0.0.jar
+  2018-03-12 20:32:27,789 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934033\commons-compress-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-compress-1.4.1.jar
+  2018-03-12 20:32:27,845 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,845 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934033\commons-compress-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-compress-1.4.1.jar
+  2018-03-12 20:32:27,845 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-compress-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934033/commons-compress-1.4.1.jar
+  2018-03-12 20:32:27,845 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934034\commons-logging-1.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-logging-1.1.1.jar
+  2018-03-12 20:32:27,907 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,907 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934034\commons-logging-1.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-logging-1.1.1.jar
+  2018-03-12 20:32:27,907 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-logging-1.1.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934034/commons-logging-1.1.1.jar
+  2018-03-12 20:32:27,907 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934035\jackson-core-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-asl-1.9.13.jar
+  2018-03-12 20:32:27,954 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:27,970 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934035\jackson-core-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-asl-1.9.13.jar
+  2018-03-12 20:32:27,970 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-core-asl-1.9.13.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934035/jackson-core-asl-1.9.13.jar
+  2018-03-12 20:32:27,970 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934036\avro-1.7.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-1.7.5.jar
+  2018-03-12 20:32:28,032 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,032 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934036\avro-1.7.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-1.7.5.jar
+  2018-03-12 20:32:28,032 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/avro-1.7.5.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934036/avro-1.7.5.jar
+  2018-03-12 20:32:28,032 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934037\parquet-avro-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-avro-1.4.1.jar
+  2018-03-12 20:32:28,095 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,095 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934037\parquet-avro-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-avro-1.4.1.jar
+  2018-03-12 20:32:28,095 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-avro-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934037/parquet-avro-1.4.1.jar
+  2018-03-12 20:32:28,095 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934038\parquet-encoding-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-encoding-1.4.1.jar
+  2018-03-12 20:32:28,164 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,165 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934038\parquet-encoding-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-encoding-1.4.1.jar
+  2018-03-12 20:32:28,165 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-encoding-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934038/parquet-encoding-1.4.1.jar
+  2018-03-12 20:32:28,166 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934039\snappy-java-1.0.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/snappy-java-1.0.5.jar
+  2018-03-12 20:32:28,213 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,213 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934039\snappy-java-1.0.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/snappy-java-1.0.5.jar
+  2018-03-12 20:32:28,213 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/snappy-java-1.0.5.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934039/snappy-java-1.0.5.jar
+  2018-03-12 20:32:28,213 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934040\avro-mapred-1.7.5-hadoop2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 20:32:28,276 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,276 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934040\avro-mapred-1.7.5-hadoop2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 20:32:28,276 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/avro-mapred-1.7.5-hadoop2.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934040/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 20:32:28,276 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934041\jackson-core-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-2.3.1.jar
+  2018-03-12 20:32:28,338 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,338 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934041\jackson-core-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-2.3.1.jar
+  2018-03-12 20:32:28,338 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-core-2.3.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934041/jackson-core-2.3.1.jar
+  2018-03-12 20:32:28,338 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934042\parquet-common-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-common-1.4.1.jar
+  2018-03-12 20:32:28,401 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,401 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934042\parquet-common-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-common-1.4.1.jar
+  2018-03-12 20:32:28,401 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-common-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934042/parquet-common-1.4.1.jar
+  2018-03-12 20:32:28,401 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934043\commons-jexl-2.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-jexl-2.1.1.jar
+  2018-03-12 20:32:28,463 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,463 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934043\commons-jexl-2.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-jexl-2.1.1.jar
+  2018-03-12 20:32:28,463 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-jexl-2.1.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934043/commons-jexl-2.1.1.jar
+  2018-03-12 20:32:28,463 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934044\ant-eclipse-1.0-jvm1.2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 20:32:28,526 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,526 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934044\ant-eclipse-1.0-jvm1.2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 20:32:28,526 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/ant-eclipse-1.0-jvm1.2.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934044/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 20:32:28,526 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934045\jackson-databind-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-databind-2.3.1.jar
+  2018-03-12 20:32:28,573 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,573 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934045\jackson-databind-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-databind-2.3.1.jar
+  2018-03-12 20:32:28,573 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-databind-2.3.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934045/jackson-databind-2.3.1.jar
+  2018-03-12 20:32:28,573 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934046\jackson-annotations-2.3.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-annotations-2.3.0.jar
+  2018-03-12 20:32:28,635 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,635 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934046\jackson-annotations-2.3.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-annotations-2.3.0.jar
+  2018-03-12 20:32:28,635 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-annotations-2.3.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934046/jackson-annotations-2.3.0.jar
+  2018-03-12 20:32:28,635 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934047\opencsv-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/opencsv-2.3.jar
+  2018-03-12 20:32:28,729 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,729 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934047\opencsv-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/opencsv-2.3.jar
+  2018-03-12 20:32:28,729 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/opencsv-2.3.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934047/opencsv-2.3.jar
+  2018-03-12 20:32:28,729 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520857934048\xz-1.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/xz-1.0.jar
+  2018-03-12 20:32:28,791 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 20:32:28,791 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520857934048\xz-1.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/xz-1.0.jar
+  2018-03-12 20:32:28,791 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/xz-1.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520857934048/xz-1.0.jar
+  2018-03-12 20:32:28,979 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934014/sqoop-1.4.6.jar
+  2018-03-12 20:32:28,979 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934015/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 20:32:28,979 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934016/parquet-column-1.4.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934017/parquet-generator-1.4.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934018/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934019/slf4j-api-1.6.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934020/mysql-connector-java-5.1.31.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934021/commons-codec-1.4.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934022/mysql-connector-java-5.1.9.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934023/hsqldb-1.8.0.10.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934024/parquet-hadoop-1.4.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934025/parquet-format-2.0.0.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934026/ant-contrib-1.0b3.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934027/paranamer-2.3.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934028/commons-io-1.4.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934029/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934030/parquet-jackson-1.4.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934031/kite-data-hive-1.0.0.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934032/kite-data-core-1.0.0.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934033/commons-compress-1.4.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934034/commons-logging-1.1.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934035/jackson-core-asl-1.9.13.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934036/avro-1.7.5.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934037/parquet-avro-1.4.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934038/parquet-encoding-1.4.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934039/snappy-java-1.0.5.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934040/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934041/jackson-core-2.3.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934042/parquet-common-1.4.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934043/commons-jexl-2.1.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934044/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934045/jackson-databind-2.3.1.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934046/jackson-annotations-2.3.0.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934047/opencsv-2.3.jar
+  2018-03-12 20:32:28,994 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520857934048/xz-1.0.jar
+  2018-03-12 20:32:29,010 INFO[org.apache.hadoop.mapreduce.Job:1294] - The url to track the job: http://localhost:8080/
+  2018-03-12 20:32:29,010 INFO[org.apache.hadoop.mapreduce.Job:1339] - Running job: job_local455061628_0001
+  2018-03-12 20:32:29,010 INFO[org.apache.hadoop.mapred.LocalJobRunner:471] - OutputCommitter set in config null
+  2018-03-12 20:32:29,057 INFO[org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter:108] - File Output Committer Algorithm version is 1
+  2018-03-12 20:32:29,057 INFO[org.apache.hadoop.mapred.LocalJobRunner:489] - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+  2018-03-12 20:32:29,227 INFO[org.apache.hadoop.mapred.LocalJobRunner:448] - Waiting for map tasks
+  2018-03-12 20:32:29,239 INFO[org.apache.hadoop.mapred.LocalJobRunner:224] - Starting task: attempt_local455061628_0001_m_000000_0
+  2018-03-12 20:32:29,286 INFO[org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter:108] - File Output Committer Algorithm version is 1
+  2018-03-12 20:32:29,301 INFO[org.apache.hadoop.yarn.util.ProcfsBasedProcessTree:192] - ProcfsBasedProcessTree currently is supported only on Linux.
+  2018-03-12 20:32:29,364 INFO[org.apache.hadoop.mapred.Task:612] -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@13b3e886
+  2018-03-12 20:32:29,395 INFO[org.apache.sqoop.mapreduce.db.DBInputFormat:192] - Using read commited transaction isolation
+  2018-03-12 20:32:29,395 INFO[org.apache.hadoop.mapred.MapTask:756] - Processing split: 1=1 AND 1=1
+  2018-03-12 20:32:29,520 INFO[org.apache.sqoop.mapreduce.db.DBRecordReader:234] - Working on split: 1=1 AND 1=1
+  2018-03-12 20:32:29,520 INFO[org.apache.sqoop.mapreduce.db.DBRecordReader:110] - Executing query: SELECT class_id, class_name, class_month, teacher, last_mod_ts FROM bigdata AS bigdata WHERE ( 1=1 ) AND ( 1=1 )
+  2018-03-12 20:32:29,536 INFO[org.apache.sqoop.mapreduce.AutoProgressMapper:158] - Auto-progress thread is finished. keepGoing=false
+  2018-03-12 20:32:29,536 INFO[org.apache.hadoop.mapred.LocalJobRunner:591] - 
+  2018-03-12 20:32:30,020 INFO[org.apache.hadoop.mapreduce.Job:1360] - Job job_local455061628_0001 running in uber mode : false
+  2018-03-12 20:32:30,020 INFO[org.apache.hadoop.mapreduce.Job:1367] -  map 0% reduce 0%
+  2018-03-12 20:32:30,629 INFO[org.apache.hadoop.mapred.Task:1038] - Task:attempt_local455061628_0001_m_000000_0 is done. And is in the process of committing
+  2018-03-12 20:32:30,824 INFO[org.apache.hadoop.mapred.LocalJobRunner:591] - 
+  2018-03-12 20:32:30,824 INFO[org.apache.hadoop.mapred.Task:1211] - Task attempt_local455061628_0001_m_000000_0 is allowed to commit now
+  2018-03-12 20:32:30,950 INFO[org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter:535] - Saved output of task 'attempt_local455061628_0001_m_000000_0' to hdfs://123.207.227.116:9000/bigdata/bigdata/_temporary/0/task_local455061628_0001_m_000000
+  2018-03-12 20:32:30,950 INFO[org.apache.hadoop.mapred.LocalJobRunner:591] - map
+  2018-03-12 20:32:30,950 INFO[org.apache.hadoop.mapred.Task:1170] - Task 'attempt_local455061628_0001_m_000000_0' done.
+  2018-03-12 20:32:30,965 INFO[org.apache.hadoop.mapred.Task:1072] - Final Counters for attempt_local455061628_0001_m_000000_0: Counters: 20
+	File System Counters
+		FILE: Number of bytes read=18750319
+		FILE: Number of bytes written=19205311
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=220
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=5
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=164
+		Total committed heap usage (bytes)=207618048
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=220
+  2018-03-12 20:32:30,965 INFO[org.apache.hadoop.mapred.LocalJobRunner:249] - Finishing task: attempt_local455061628_0001_m_000000_0
+  2018-03-12 20:32:30,965 INFO[org.apache.hadoop.mapred.LocalJobRunner:456] - map task executor complete.
+  2018-03-12 20:32:31,028 INFO[org.apache.hadoop.mapreduce.Job:1367] -  map 100% reduce 0%
+  2018-03-12 20:32:32,028 INFO[org.apache.hadoop.mapreduce.Job:1378] - Job job_local455061628_0001 completed successfully
+  2018-03-12 20:32:32,062 INFO[org.apache.hadoop.mapreduce.Job:1385] - Counters: 20
+	File System Counters
+		FILE: Number of bytes read=18750319
+		FILE: Number of bytes written=19205311
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=220
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=5
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=164
+		Total committed heap usage (bytes)=207618048
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=220
+  2018-03-12 20:32:32,062 INFO[org.apache.sqoop.mapreduce.ImportJobBase:184] - Transferred 220 bytes in 30.0804 seconds (7.3137 bytes/sec)
+  2018-03-12 20:32:32,078 INFO[org.apache.sqoop.mapreduce.ImportJobBase:186] - Retrieved 5 records.
+  2018-03-12 21:03:27,890 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 21:03:27,904 WARN[org.apache.sqoop.tool.SqoopTool:177] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 21:03:28,186 INFO[org.apache.sqoop.Sqoop:92] - Running Sqoop version: 1.4.6
+  2018-03-12 21:03:28,280 WARN[org.apache.sqoop.tool.BaseSqoopTool:1021] - Setting your password on the command-line is insecure. Consider using -P instead.
+  2018-03-12 21:03:28,311 WARN[org.apache.sqoop.ConnFactory:273] - $SQOOP_CONF_DIR has not been set in the environment. Cannot check for additional configuration.
+  2018-03-12 21:03:28,389 WARN[org.apache.sqoop.ConnFactory:132] - Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+  2018-03-12 21:03:28,405 INFO[org.apache.sqoop.manager.SqlManager:98] - Using default fetchSize of 1000
+  2018-03-12 21:03:28,405 INFO[org.apache.sqoop.tool.CodeGenTool:92] - Beginning code generation
+  2018-03-12 21:03:29,061 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 21:03:29,069 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 21:03:29,131 INFO[org.apache.sqoop.orm.CompilationManager:85] - $HADOOP_MAPRED_HOME is not set
+  2018-03-12 21:03:31,055 INFO[org.apache.sqoop.orm.CompilationManager:330] - Writing jar file: \tmp\sqoop-AMO\compile\a87624262bf0b704babcec3e97ba8947\bigdata.jar
+  2018-03-12 21:03:31,130 INFO[org.apache.sqoop.mapreduce.ImportJobBase:235] - Beginning import of bigdata
+  2018-03-12 21:03:31,552 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - mapred.jar is deprecated. Instead, use mapreduce.job.jar
+  2018-03-12 21:03:31,552 INFO[org.apache.sqoop.manager.SqlManager:757] - Executing SQL statement: SELECT t.* FROM bigdata AS t WHERE 1=0
+  2018-03-12 21:03:32,943 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+  2018-03-12 21:03:32,990 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - session.id is deprecated. Instead, use dfs.metrics.session-id
+  2018-03-12 21:03:32,990 INFO[org.apache.hadoop.metrics.jvm.JvmMetrics:76] - Initializing JVM Metrics with processName=JobTracker, sessionId=
+  2018-03-12 21:03:43,389 INFO[org.apache.sqoop.mapreduce.db.DBInputFormat:192] - Using read commited transaction isolation
+  2018-03-12 21:03:43,455 INFO[org.apache.hadoop.mapreduce.JobSubmitter:198] - number of splits:1
+  2018-03-12 21:03:43,486 INFO[org.apache.hadoop.conf.Configuration.deprecation:1243] - fs.default.name is deprecated. Instead, use fs.defaultFS
+  2018-03-12 21:03:43,674 INFO[org.apache.hadoop.mapreduce.JobSubmitter:287] - Submitting tokens for job: job_local832880580_0001
+  2018-03-12 21:03:50,089 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823909\sqoop-1.4.6.jar <- D:\Users\AMO\workspace\DataSourceMSystem/sqoop-1.4.6.jar
+  2018-03-12 21:03:55,335 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:55,346 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823909\sqoop-1.4.6.jar <- D:\Users\AMO\workspace\DataSourceMSystem/sqoop-1.4.6.jar
+  2018-03-12 21:03:55,346 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/C:/Users/AMO/.m2/repository/org/apache/sqoop/sqoop/1.4.6/sqoop-1.4.6.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823909/sqoop-1.4.6.jar
+  2018-03-12 21:03:55,347 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823910\kite-hadoop-compatibility-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 21:03:55,693 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:55,693 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823910\kite-hadoop-compatibility-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 21:03:55,693 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-hadoop-compatibility-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823910/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 21:03:55,865 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823911\parquet-column-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-column-1.4.1.jar
+  2018-03-12 21:03:55,943 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:55,943 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823911\parquet-column-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-column-1.4.1.jar
+  2018-03-12 21:03:55,943 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-column-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823911/parquet-column-1.4.1.jar
+  2018-03-12 21:03:55,943 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823912\parquet-generator-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-generator-1.4.1.jar
+  2018-03-12 21:03:56,005 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,005 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823912\parquet-generator-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-generator-1.4.1.jar
+  2018-03-12 21:03:56,005 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-generator-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823912/parquet-generator-1.4.1.jar
+  2018-03-12 21:03:56,005 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823913\kite-data-mapreduce-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 21:03:56,052 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,052 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823913\kite-data-mapreduce-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 21:03:56,052 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-data-mapreduce-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823913/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 21:03:56,052 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823914\slf4j-api-1.6.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/slf4j-api-1.6.1.jar
+  2018-03-12 21:03:56,115 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,115 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823914\slf4j-api-1.6.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/slf4j-api-1.6.1.jar
+  2018-03-12 21:03:56,115 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/slf4j-api-1.6.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823914/slf4j-api-1.6.1.jar
+  2018-03-12 21:03:56,115 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823915\mysql-connector-java-5.1.31.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.31.jar
+  2018-03-12 21:03:56,177 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,177 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823915\mysql-connector-java-5.1.31.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.31.jar
+  2018-03-12 21:03:56,177 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/mysql-connector-java-5.1.31.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823915/mysql-connector-java-5.1.31.jar
+  2018-03-12 21:03:56,177 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823916\commons-codec-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-codec-1.4.jar
+  2018-03-12 21:03:56,240 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,240 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823916\commons-codec-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-codec-1.4.jar
+  2018-03-12 21:03:56,240 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-codec-1.4.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823916/commons-codec-1.4.jar
+  2018-03-12 21:03:56,240 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823917\mysql-connector-java-5.1.9.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.9.jar
+  2018-03-12 21:03:56,302 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,302 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823917\mysql-connector-java-5.1.9.jar <- D:\Users\AMO\workspace\DataSourceMSystem/mysql-connector-java-5.1.9.jar
+  2018-03-12 21:03:56,302 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/C:/Users/AMO/.m2/repository/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823917/mysql-connector-java-5.1.9.jar
+  2018-03-12 21:03:56,302 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823918\hsqldb-1.8.0.10.jar <- D:\Users\AMO\workspace\DataSourceMSystem/hsqldb-1.8.0.10.jar
+  2018-03-12 21:03:56,349 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,349 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823918\hsqldb-1.8.0.10.jar <- D:\Users\AMO\workspace\DataSourceMSystem/hsqldb-1.8.0.10.jar
+  2018-03-12 21:03:56,364 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/hsqldb-1.8.0.10.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823918/hsqldb-1.8.0.10.jar
+  2018-03-12 21:03:56,365 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823919\parquet-hadoop-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-hadoop-1.4.1.jar
+  2018-03-12 21:03:56,412 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,412 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823919\parquet-hadoop-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-hadoop-1.4.1.jar
+  2018-03-12 21:03:56,412 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-hadoop-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823919/parquet-hadoop-1.4.1.jar
+  2018-03-12 21:03:56,412 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823920\parquet-format-2.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-format-2.0.0.jar
+  2018-03-12 21:03:56,474 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,474 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823920\parquet-format-2.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-format-2.0.0.jar
+  2018-03-12 21:03:56,474 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-format-2.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823920/parquet-format-2.0.0.jar
+  2018-03-12 21:03:56,474 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823921\ant-contrib-1.0b3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-contrib-1.0b3.jar
+  2018-03-12 21:03:56,521 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,521 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823921\ant-contrib-1.0b3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-contrib-1.0b3.jar
+  2018-03-12 21:03:56,537 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/ant-contrib-1.0b3.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823921/ant-contrib-1.0b3.jar
+  2018-03-12 21:03:56,537 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823922\paranamer-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/paranamer-2.3.jar
+  2018-03-12 21:03:56,584 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,584 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823922\paranamer-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/paranamer-2.3.jar
+  2018-03-12 21:03:56,584 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/paranamer-2.3.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823922/paranamer-2.3.jar
+  2018-03-12 21:03:56,584 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823923\commons-io-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-io-1.4.jar
+  2018-03-12 21:03:56,646 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,646 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823923\commons-io-1.4.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-io-1.4.jar
+  2018-03-12 21:03:56,646 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-io-1.4.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823923/commons-io-1.4.jar
+  2018-03-12 21:03:56,646 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823924\jackson-mapper-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 21:03:56,709 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,709 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823924\jackson-mapper-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 21:03:56,709 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-mapper-asl-1.9.13.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823924/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 21:03:56,709 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823925\parquet-jackson-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-jackson-1.4.1.jar
+  2018-03-12 21:03:56,834 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,834 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823925\parquet-jackson-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-jackson-1.4.1.jar
+  2018-03-12 21:03:56,834 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-jackson-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823925/parquet-jackson-1.4.1.jar
+  2018-03-12 21:03:56,834 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823926\kite-data-hive-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-hive-1.0.0.jar
+  2018-03-12 21:03:56,943 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,943 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823926\kite-data-hive-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-hive-1.0.0.jar
+  2018-03-12 21:03:56,943 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-data-hive-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823926/kite-data-hive-1.0.0.jar
+  2018-03-12 21:03:56,943 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823927\kite-data-core-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-core-1.0.0.jar
+  2018-03-12 21:03:56,990 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:56,990 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823927\kite-data-core-1.0.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/kite-data-core-1.0.0.jar
+  2018-03-12 21:03:57,006 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/kite-data-core-1.0.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823927/kite-data-core-1.0.0.jar
+  2018-03-12 21:03:57,006 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823928\commons-compress-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-compress-1.4.1.jar
+  2018-03-12 21:03:57,053 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,053 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823928\commons-compress-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-compress-1.4.1.jar
+  2018-03-12 21:03:57,068 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-compress-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823928/commons-compress-1.4.1.jar
+  2018-03-12 21:03:57,068 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823929\commons-logging-1.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-logging-1.1.1.jar
+  2018-03-12 21:03:57,115 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,115 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823929\commons-logging-1.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-logging-1.1.1.jar
+  2018-03-12 21:03:57,115 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-logging-1.1.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823929/commons-logging-1.1.1.jar
+  2018-03-12 21:03:57,115 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823930\jackson-core-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-asl-1.9.13.jar
+  2018-03-12 21:03:57,193 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,193 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823930\jackson-core-asl-1.9.13.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-asl-1.9.13.jar
+  2018-03-12 21:03:57,193 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-core-asl-1.9.13.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823930/jackson-core-asl-1.9.13.jar
+  2018-03-12 21:03:57,193 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823931\avro-1.7.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-1.7.5.jar
+  2018-03-12 21:03:57,240 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,240 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823931\avro-1.7.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-1.7.5.jar
+  2018-03-12 21:03:57,240 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/avro-1.7.5.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823931/avro-1.7.5.jar
+  2018-03-12 21:03:57,240 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823932\parquet-avro-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-avro-1.4.1.jar
+  2018-03-12 21:03:57,302 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,302 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823932\parquet-avro-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-avro-1.4.1.jar
+  2018-03-12 21:03:57,302 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-avro-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823932/parquet-avro-1.4.1.jar
+  2018-03-12 21:03:57,302 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823933\parquet-encoding-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-encoding-1.4.1.jar
+  2018-03-12 21:03:57,396 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,396 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823933\parquet-encoding-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-encoding-1.4.1.jar
+  2018-03-12 21:03:57,399 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-encoding-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823933/parquet-encoding-1.4.1.jar
+  2018-03-12 21:03:57,400 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823934\snappy-java-1.0.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/snappy-java-1.0.5.jar
+  2018-03-12 21:03:57,447 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,447 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823934\snappy-java-1.0.5.jar <- D:\Users\AMO\workspace\DataSourceMSystem/snappy-java-1.0.5.jar
+  2018-03-12 21:03:57,447 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/snappy-java-1.0.5.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823934/snappy-java-1.0.5.jar
+  2018-03-12 21:03:57,447 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823935\avro-mapred-1.7.5-hadoop2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 21:03:57,509 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,509 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823935\avro-mapred-1.7.5-hadoop2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 21:03:57,509 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/avro-mapred-1.7.5-hadoop2.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823935/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 21:03:57,509 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823936\jackson-core-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-2.3.1.jar
+  2018-03-12 21:03:57,572 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,572 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823936\jackson-core-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-core-2.3.1.jar
+  2018-03-12 21:03:57,572 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-core-2.3.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823936/jackson-core-2.3.1.jar
+  2018-03-12 21:03:57,572 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823937\parquet-common-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-common-1.4.1.jar
+  2018-03-12 21:03:57,634 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,634 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823937\parquet-common-1.4.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/parquet-common-1.4.1.jar
+  2018-03-12 21:03:57,634 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/parquet-common-1.4.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823937/parquet-common-1.4.1.jar
+  2018-03-12 21:03:57,634 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823938\commons-jexl-2.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-jexl-2.1.1.jar
+  2018-03-12 21:03:57,697 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,697 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823938\commons-jexl-2.1.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/commons-jexl-2.1.1.jar
+  2018-03-12 21:03:57,697 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/commons-jexl-2.1.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823938/commons-jexl-2.1.1.jar
+  2018-03-12 21:03:57,697 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823939\ant-eclipse-1.0-jvm1.2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 21:03:57,806 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,806 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823939\ant-eclipse-1.0-jvm1.2.jar <- D:\Users\AMO\workspace\DataSourceMSystem/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 21:03:57,822 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/ant-eclipse-1.0-jvm1.2.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823939/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 21:03:57,822 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823940\jackson-databind-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-databind-2.3.1.jar
+  2018-03-12 21:03:57,869 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,869 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823940\jackson-databind-2.3.1.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-databind-2.3.1.jar
+  2018-03-12 21:03:57,869 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-databind-2.3.1.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823940/jackson-databind-2.3.1.jar
+  2018-03-12 21:03:57,869 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823941\jackson-annotations-2.3.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-annotations-2.3.0.jar
+  2018-03-12 21:03:57,931 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:57,931 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823941\jackson-annotations-2.3.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/jackson-annotations-2.3.0.jar
+  2018-03-12 21:03:57,931 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/jackson-annotations-2.3.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823941/jackson-annotations-2.3.0.jar
+  2018-03-12 21:03:57,931 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823942\opencsv-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/opencsv-2.3.jar
+  2018-03-12 21:03:58,009 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:58,009 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823942\opencsv-2.3.jar <- D:\Users\AMO\workspace\DataSourceMSystem/opencsv-2.3.jar
+  2018-03-12 21:03:58,009 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/opencsv-2.3.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823942/opencsv-2.3.jar
+  2018-03-12 21:03:58,009 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:201] - Creating symlink: \tmp\hadoop-AMO\mapred\local\1520859823943\xz-1.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/xz-1.0.jar
+  2018-03-12 21:03:58,087 WARN[org.apache.hadoop.fs.FileUtil:824] - Fail to create symbolic links on Windows. The default security settings in Windows disallow non-elevated administrators and all non-administrators from creating symbolic links. This behavior can be changed in the Local Security Policy management console
+  2018-03-12 21:03:58,087 WARN[org.apache.hadoop.mapred.LocalDistributedCacheManager:203] - Failed to create symlink: \tmp\hadoop-AMO\mapred\local\1520859823943\xz-1.0.jar <- D:\Users\AMO\workspace\DataSourceMSystem/xz-1.0.jar
+  2018-03-12 21:03:58,087 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:165] - Localized file:/D:/java/sqoop-1.4.6/lib/xz-1.0.jar as file:/tmp/hadoop-AMO/mapred/local/1520859823943/xz-1.0.jar
+  2018-03-12 21:03:58,291 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823909/sqoop-1.4.6.jar
+  2018-03-12 21:03:58,291 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823910/kite-hadoop-compatibility-1.0.0.jar
+  2018-03-12 21:03:58,291 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823911/parquet-column-1.4.1.jar
+  2018-03-12 21:03:58,291 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823912/parquet-generator-1.4.1.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823913/kite-data-mapreduce-1.0.0.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823914/slf4j-api-1.6.1.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823915/mysql-connector-java-5.1.31.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823916/commons-codec-1.4.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823917/mysql-connector-java-5.1.9.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823918/hsqldb-1.8.0.10.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823919/parquet-hadoop-1.4.1.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823920/parquet-format-2.0.0.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823921/ant-contrib-1.0b3.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823922/paranamer-2.3.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823923/commons-io-1.4.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823924/jackson-mapper-asl-1.9.13.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823925/parquet-jackson-1.4.1.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823926/kite-data-hive-1.0.0.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823927/kite-data-core-1.0.0.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823928/commons-compress-1.4.1.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823929/commons-logging-1.1.1.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823930/jackson-core-asl-1.9.13.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823931/avro-1.7.5.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823932/parquet-avro-1.4.1.jar
+  2018-03-12 21:03:58,306 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823933/parquet-encoding-1.4.1.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823934/snappy-java-1.0.5.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823935/avro-mapred-1.7.5-hadoop2.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823936/jackson-core-2.3.1.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823937/parquet-common-1.4.1.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823938/commons-jexl-2.1.1.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823939/ant-eclipse-1.0-jvm1.2.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823940/jackson-databind-2.3.1.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823941/jackson-annotations-2.3.0.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823942/opencsv-2.3.jar
+  2018-03-12 21:03:58,322 INFO[org.apache.hadoop.mapred.LocalDistributedCacheManager:234] - file:/D:/tmp/hadoop-AMO/mapred/local/1520859823943/xz-1.0.jar
+  2018-03-12 21:03:58,337 INFO[org.apache.hadoop.mapreduce.Job:1294] - The url to track the job: http://localhost:8080/
+  2018-03-12 21:03:58,337 INFO[org.apache.hadoop.mapreduce.Job:1339] - Running job: job_local832880580_0001
+  2018-03-12 21:03:58,337 INFO[org.apache.hadoop.mapred.LocalJobRunner:471] - OutputCommitter set in config null
+  2018-03-12 21:03:58,384 INFO[org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter:108] - File Output Committer Algorithm version is 1
+  2018-03-12 21:03:58,400 INFO[org.apache.hadoop.mapred.LocalJobRunner:489] - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+  2018-03-12 21:03:58,626 INFO[org.apache.hadoop.mapred.LocalJobRunner:448] - Waiting for map tasks
+  2018-03-12 21:03:58,626 INFO[org.apache.hadoop.mapred.LocalJobRunner:224] - Starting task: attempt_local832880580_0001_m_000000_0
+  2018-03-12 21:03:58,673 INFO[org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter:108] - File Output Committer Algorithm version is 1
+  2018-03-12 21:03:58,705 INFO[org.apache.hadoop.yarn.util.ProcfsBasedProcessTree:192] - ProcfsBasedProcessTree currently is supported only on Linux.
+  2018-03-12 21:03:58,767 INFO[org.apache.hadoop.mapred.Task:612] -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@251819ed
+  2018-03-12 21:03:58,798 INFO[org.apache.sqoop.mapreduce.db.DBInputFormat:192] - Using read commited transaction isolation
+  2018-03-12 21:03:58,798 INFO[org.apache.hadoop.mapred.MapTask:756] - Processing split: 1=1 AND 1=1
+  2018-03-12 21:03:58,970 INFO[org.apache.sqoop.mapreduce.db.DBRecordReader:234] - Working on split: 1=1 AND 1=1
+  2018-03-12 21:03:58,970 INFO[org.apache.sqoop.mapreduce.db.DBRecordReader:110] - Executing query: SELECT class_id, class_name, class_month, teacher, last_mod_ts FROM bigdata AS bigdata WHERE ( 1=1 ) AND ( 1=1 )
+  2018-03-12 21:03:58,986 INFO[org.apache.sqoop.mapreduce.AutoProgressMapper:158] - Auto-progress thread is finished. keepGoing=false
+  2018-03-12 21:03:58,986 INFO[org.apache.hadoop.mapred.LocalJobRunner:591] - 
+  2018-03-12 21:03:59,345 INFO[org.apache.hadoop.mapreduce.Job:1360] - Job job_local832880580_0001 running in uber mode : false
+  2018-03-12 21:03:59,345 INFO[org.apache.hadoop.mapreduce.Job:1367] -  map 0% reduce 0%
+  2018-03-12 21:04:00,080 INFO[org.apache.hadoop.mapred.Task:1038] - Task:attempt_local832880580_0001_m_000000_0 is done. And is in the process of committing
+  2018-03-12 21:04:00,111 INFO[org.apache.hadoop.mapred.LocalJobRunner:591] - 
+  2018-03-12 21:04:00,111 INFO[org.apache.hadoop.mapred.Task:1211] - Task attempt_local832880580_0001_m_000000_0 is allowed to commit now
+  2018-03-12 21:04:00,174 INFO[org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter:535] - Saved output of task 'attempt_local832880580_0001_m_000000_0' to hdfs://123.207.227.116:9000/bigdata/bigdata/_temporary/0/task_local832880580_0001_m_000000
+  2018-03-12 21:04:00,174 INFO[org.apache.hadoop.mapred.LocalJobRunner:591] - map
+  2018-03-12 21:04:00,174 INFO[org.apache.hadoop.mapred.Task:1170] - Task 'attempt_local832880580_0001_m_000000_0' done.
+  2018-03-12 21:04:00,174 INFO[org.apache.hadoop.mapred.Task:1072] - Final Counters for attempt_local832880580_0001_m_000000_0: Counters: 20
+	File System Counters
+		FILE: Number of bytes read=18750319
+		FILE: Number of bytes written=19205311
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=220
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=5
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=140
+		Total committed heap usage (bytes)=208666624
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=220
+  2018-03-12 21:04:00,174 INFO[org.apache.hadoop.mapred.LocalJobRunner:249] - Finishing task: attempt_local832880580_0001_m_000000_0
+  2018-03-12 21:04:00,174 INFO[org.apache.hadoop.mapred.LocalJobRunner:456] - map task executor complete.
+  2018-03-12 21:04:00,349 INFO[org.apache.hadoop.mapreduce.Job:1367] -  map 100% reduce 0%
+  2018-03-12 21:04:00,349 INFO[org.apache.hadoop.mapreduce.Job:1378] - Job job_local832880580_0001 completed successfully
+  2018-03-12 21:04:00,396 INFO[org.apache.hadoop.mapreduce.Job:1385] - Counters: 20
+	File System Counters
+		FILE: Number of bytes read=18750319
+		FILE: Number of bytes written=19205311
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=0
+		HDFS: Number of bytes written=220
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Map-Reduce Framework
+		Map input records=5
+		Map output records=5
+		Input split bytes=87
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=140
+		Total committed heap usage (bytes)=208666624
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=220
+  2018-03-12 21:04:00,412 INFO[org.apache.sqoop.mapreduce.ImportJobBase:184] - Transferred 220 bytes in 27.4402 seconds (8.0174 bytes/sec)
+  2018-03-12 21:04:00,412 INFO[org.apache.sqoop.mapreduce.ImportJobBase:186] - Retrieved 5 records.
+  
