@@ -15,7 +15,7 @@ body {
 </head>
 
 <body>
-	<%@ include file="/WEB-INF/common/head.jsp"%>
+	
 
 	<div id="contentWrap">
 

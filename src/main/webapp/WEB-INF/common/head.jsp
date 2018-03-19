@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>数据源综合管理系统</title>
+<title>大数据之数据源综合管理系统</title>
 <link href="${pageContext.request.contextPath}/css/style.css"
 	rel="stylesheet" type="text/css" />
 
@@ -19,7 +19,7 @@
 			<div class="nav fleft">
 				<ul>
 					<div class="nav-left fleft"></div>
-					<li class="first">我的主页</li>
+					<a href="${pageContext.request.contextPath}/user/listDB"><li class="first">我的主页</li></a>
 					<a href="${pageContext.request.contextPath}/user/listDB"><li>数据源配置管理</li></a>
 					<li>内容</li>
 					<li>用户</li>
@@ -38,8 +38,6 @@
 			</div>
 		</div>
 		<!--#header -->
-
-
 
 	</div>
 

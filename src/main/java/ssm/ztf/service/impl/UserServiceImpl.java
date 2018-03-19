@@ -34,6 +34,13 @@ public class  UserServiceImpl implements UserService  {
 		List<DB> db=userDao.getDBList();
 		return db;
 	}
+
+	@Override
+	@Transactional
+	public DB queryDBListId(int id) {
+		DB db=userDao.queryDBListId(id);
+		return db;
+	}
 	
 	
 	

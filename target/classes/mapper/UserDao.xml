@@ -21,5 +21,14 @@
 		FROM
 			DB
 	</select>
+	
+	<select id="queryDBListId" resultType="DB" parameterType="int">
+		<!-- 具体的sql -->
+		SELECT
+			*
+		FROM
+			DB
+		WHERE id=#{id}	
+	</select>
 </mapper>
     

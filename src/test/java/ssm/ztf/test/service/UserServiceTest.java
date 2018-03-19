@@ -5,6 +5,7 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import ssm.ztf.db.dao.RDBMSDao;
 import ssm.ztf.model.DB;
 import ssm.ztf.model.User;
 import ssm.ztf.service.UserService;
@@ -26,6 +27,15 @@ public class UserServiceTest extends BaseTest {
 	public void testGetDBList() throws Exception {
 		List<DB> db= userService.getDBList();
 		System.out.println(db);
+	}
+	
+	@Test
+	public void testQueryDBListId() throws Exception {
+		int id=1;
+		DB db= userService.queryDBListId(id);
+		RDBMSDao RDBMSDao=new RDBMSDao();
+		RDBMSDao.getDB(db);
+		
 	}
 
 }

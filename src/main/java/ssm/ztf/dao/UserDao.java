@@ -12,4 +12,7 @@ public interface UserDao {
 
 	// 查询所有数据源
 	public List<DB> getDBList();
+
+	// 通过Id查询数据源
+	public DB queryDBListId(int id);
 }

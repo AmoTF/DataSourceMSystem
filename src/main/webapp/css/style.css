@@ -82,5 +82,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 .pageColumn tbody tr{ border:1px solid #bfd8e0; height:28px;}
 .pageColumn tbody .trLight{ background:#f9fcfd}
 .pageColumn tbody .checkBox{ background:#f1f7f9; border:1px solid #bfd8e0; text-align:center}
-.pageColumn tbody td{ text-align:center;}
+.pageColumn tbody td{ border-left:1px solid #c5dbe2; text-align:center; height:28px;}
+
+
+.logon{ width:29px; height:29px; background:url(../images/listDB-logon.png);}
+
+/*.pageColumn tbody td{ text-align:center;}*/
 /* .pageColumn */
