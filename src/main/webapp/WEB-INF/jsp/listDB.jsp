@@ -40,7 +40,7 @@ body {
 							<th>${db.name}</th>
 							<th>${db.title}</th>
 							<th>${db.dbType}</th>
-							<th>无</th>
+							<th>无1</th>
 							<th>正常</th>
 							<th>${db.lastDate}</th>
 							<th>${db.creater}</th>
