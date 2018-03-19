@@ -9,9 +9,17 @@
 		SELECT
 			*
 		FROM
-			user
+			User
 		WHERE
 			user_name = #{userName}
+	</select>
+	
+	<select id="getDBList" resultType="DB" >
+		<!-- 具体的sql -->
+		SELECT
+			*
+		FROM
+			DB
 	</select>
 </mapper>
     
