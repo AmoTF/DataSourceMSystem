@@ -4,10 +4,17 @@ import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import net.sf.json.JSONArray;
+import net.sf.json.JsonConfig;
 import ssm.ztf.model.DB;
 
 /**
@@ -95,8 +102,6 @@ public class DBConnection {
 	public void setDbInstance(String dbInstance) {
 		this.dbInstance = dbInstance;
 	}
-	
-	
 
 	@Override
 	public String toString() {
@@ -105,13 +110,11 @@ public class DBConnection {
 	}
 
 	public Connection getConnection(DB db) {
-		// new DBConnection(“oracle”, “192.168.17.108″, 3306, “test”, “test”,
-		// “lxd”, “123456″);
-		System.out.println(db.toString());
+
 		setDbType(db.getDbType());
 		setDbIp(db.getServer());
 		setDbPort(db.getPort());
-		setDbInstance(db.getName());		
+		setDbInstance(db.getName());
 		setUserName(db.getDbName());
 		setPassword(db.getDbPasswd());
 		String driverClass = null;
@@ -155,13 +158,55 @@ public class DBConnection {
 		ResultSet rs = dbmd.getColumns(null, "%", tableName, "%");
 		List columnNameList = new ArrayList();
 		while (rs.next()) {
-			columnNameList.add(rs.getString("COLUMN_NAME")+":<"+rs.getString("TYPE_NAME")+">");
+			columnNameList.add(rs.getString("COLUMN_NAME"));
+		}
+		return columnNameList;
+	}
+
+	// 获取数据表中所有列的列名，并添加到列表结构中。
+	public List getColumnTypeList(Connection conn, String tableName) throws SQLException {
+		DatabaseMetaData dbmd = conn.getMetaData();
+		ResultSet rs = dbmd.getColumns(null, "%", tableName, "%");
+		List columnNameList = new ArrayList();
+		while (rs.next()) {
+			columnNameList.add(rs.getString("TYPE_NAME"));
 			/*System.out.print(rs.getString("COLUMN_NAME"));
 			System.out.print(rs.getString(":"));
 			System.out.println(rs.getString("TYPE_NAME"));*/
 
 		}
 		return columnNameList;
-	}	
+	}
+
+	public List getDBTableData(Connection conn,String tableName) throws SQLException{
+		
+        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+        String sql="select * from "+tableName+" limit 10";
+        Statement stmt=conn.createStatement();
+        ResultSet rs=stmt.executeQuery(sql);
+        list=convertToList(rs);
+		return list;
+		
+	}
+	
+	//rs结果集转为List类型
+	public static List<Map<String, Object>> convertToList(ResultSet rs) throws SQLException {
+        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+        ResultSetMetaData md = (ResultSetMetaData) rs.getMetaData();
+        int columnCount = md.getColumnCount();
+        while (rs.next()) {
+            Map<String, Object> rowData = new HashMap<String, Object>();
+            for (int i = 1; i <= columnCount; i++) {
+                rowData.put(md.getColumnName(i), rs.getObject(i));
+            }
+            list.add(rowData);
+        } 
+        JsonConfig jsonConfig = new JsonConfig();  
+        jsonConfig.registerJsonValueProcessor(Timestamp.class, new JsonDateValueProcessor());  
+        JSONArray jr = JSONArray.fromObject(list,jsonConfig);
+        System.out.println(jr);
+        return list;
+    }
+	
 	
 }

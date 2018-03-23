@@ -37,5 +37,15 @@ public class UserServiceTest extends BaseTest {
 		RDBMSDao.getDB(db);
 		
 	}
+	
+	@Test
+	public void testGetDBTableData() throws Exception {
+		int id=1;
+		DB db= userService.queryDBListId(id);
+		RDBMSDao RDBMSDao=new RDBMSDao();
+		RDBMSDao.getDBTableData(db,"bigdata");
+		
+	}
+	
 
 }
