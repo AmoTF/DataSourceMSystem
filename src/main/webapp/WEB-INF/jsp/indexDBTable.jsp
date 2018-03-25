@@ -1,62 +1,56 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*"
+	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>大数据之数据源综合管理系统</title>
 <link href="${pageContext.request.contextPath}/css/style.css"
 	rel="stylesheet" type="text/css" />
-
-<style type="text/css">
-body {
-	background: #FFF
-}
-</style>
 </head>
 
 <body>
-	
 
 	<div id="contentWrap">
 
 		<div class="pageColumn">
 			<table>
 				<thead>
-					<th></td>
-					<th width="10%">名称</th>
-					<th width="10%">标题</th>
-					<th>种类</th>
-					<th>类型</th>
-					<th>启用状态</th>
-					<th>创建时间</th>
-					<th>创建人</th>
-					<th>服务器</th>
-					<th>备注</th>
-					<th>操作</th>
+					<!-- <c:forEach items="${colmun}" var="colmun" varStatus="status">
+						 <th>${colmun.get(id)}</th> 
+						<th>${colmun.get(id)}</th> 
+						<th>${colmun.get(id)}</th> 
+					</c:forEach> -->
+
+					<%
+						List colmun = (List) request.getAttribute("colmun");
+						for (int i = 0; i < colmun.size(); i++)
+							out.print("<th>" + colmun.get(i) + "</th>");
+					%>
+
 				</thead>
-				<tbody>
-					<c:forEach items="${db}" var="db">
-						<a href="${pageContext.request.contextPath}/index"></a><tr>
-							<th class="checkBox"><input name="" type="checkbox" value="" /></th>
-							<td style="display:none;">${db.id}</td>
-							<td>${db.name}</td>
-							<td>${db.title}</td>
-							<td>${db.dbType}</td>
-							<td>无1</td>
-							<td width="6%">正常</td>
-							<td width="11%">${db.lastDate}</td>
-							<td>${db.creater}</td>
-							<td>${db.server}</td>
-							<td>${db.remarks}</td>
-							<td width="3.5%"><a class="logon fright"
-				href="${pageContext.request.contextPath}/user/indexDB/${db.id}"> </a></td>
-						</tr>
-						</a>
-					</c:forEach>
+				<tbody id="tableData">				
 				</tbody>
 			</table>
 		</div>
 	</div>
 
 </body>
+
+<SCRIPT type="text/javascript">
+	var jr = ${jr}
+	var htmlStr = "";
+	var html="";
+	var htm = document.getElementById("tableData").innerHTML;
+	
+	for ( var size in jr) {
+		 html=html+'<tr>';
+		for ( var key in jr[size]) {
+			html = html+'<td>' + jr[size][key] + '</td>';
+		}
+		html=html+'</tr>';
+	}
+	htmlStr += html;
+	
+	document.getElementById("tableData").innerHTML=htm+html; 
+</SCRIPT>
 </html>

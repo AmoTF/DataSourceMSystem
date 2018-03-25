@@ -21,6 +21,8 @@
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/js/jquery.ztree.exedit.js"></script>
 <SCRIPT type="text/javascript">
+var xxObj = document.frames;
+
 	var setting = {
 		view : {
 			selectedMulti : false
@@ -43,31 +45,19 @@
 			beforeDrag : beforeDrag,
 			beforeRemove : beforeRemove,
 			beforeRename : beforeRename,
-			onRemove : onRemove
+			onRemove : onRemove,
+			beforeClick : beforeClick,
 		}
-	};
+	}; 
+	
 
 	var $j = jQuery.noConflict();
-	var zNodes=${result};
-	
-	var zNodes1 = [ {
-		"id" : 1,
-		"name" : "叶子节点 1",
-		"pId" : 0,
-
-		open : true
-	}, {
-		"id" : 11,
-		"name" : "叶子节点 1-1",
-		"pId" : 1,
-
-	}, {
-		"id" : 2,
-		"pId" : 0,
-		"name" : "叶子节点 1-2",
-
-	} ];
-
+   
+    
+	//树节点
+	var zNodes = ${result};
+	//数据库编号
+	var id=${id};
 	var log, className = "dark";
 	function beforeDrag(treeId, treeNodes) {
 		return false;
@@ -93,20 +83,20 @@
 		}
 		return true;
 	}
-	function showLog(str) {
-		if (!log)
-			log = $("#log");
-		log.append("<li class='"+className+"'>" + str + "</li>");
-		if (log.children("li").length > 8) {
-			log.get(0).removeChild(log.children("li")[0]);
+	
+	
+	//点击节点,显示右边
+	function beforeClick(treeId, treeNode, clickFlag) {
+		
+		if(treeNode.id<100)
+			$("#rightMain").attr("src","../DBTableData/"+id+"/"+treeNode.name);
+		else{
+			$("#rightMain").attr("src","");
 		}
+		
 	}
-	function getTime() {
-		var now = new Date(), h = now.getHours(), m = now.getMinutes(), s = now
-				.getSeconds(), ms = now.getMilliseconds();
-		return (h + ":" + m + ":" + s + " " + ms);
-	}
-
+	
+	
 	var newCount = 1;
 	function add(e) {
 		var zTree = $.fn.zTree.getZTreeObj("treeDemo"), isParent = e.data.isParent, nodes = zTree
@@ -161,6 +151,7 @@
 		zTree.removeChildNodes(treeNode);
 	};
 
+	
 	$j(document).ready(function() {
 		$j.fn.zTree.init($("#treeDemo"), setting, zNodes);
 		$("#addParent").bind("click", {
@@ -172,6 +163,7 @@
 		$("#edit").bind("click", edit);
 		$("#remove").bind("click", remove);
 		$("#clearChildren").bind("click", clearChildren);
+
 	});
 </SCRIPT>
 
@@ -190,8 +182,8 @@
 			<iframe width="100%" scrolling="auto" height="100%"
 				frameborder="false" allowtransparency="true"
 				style="border: medium none;"
-				src="${pageContext.request.contextPath}/user/indexDBTable"
-				id="rightMain" name="right"></iframe>
+				src="",
+				id="rightMain" name="rightMain"></iframe>
 		</div>
 
 	</div>

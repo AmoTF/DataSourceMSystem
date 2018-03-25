@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import ssm.ztf.model.DB;
 import ssm.ztf.utl.DBConnection;
@@ -75,13 +76,12 @@ public class RDBMSDao {
 
 	}		
 	
-	public List getDBTableData(DB db,String tableName) throws SQLException{
+	public List<Map<String, Object>> getDBTableData(DB db,String tableName) throws SQLException{
 		
 		DBConnection dbConn = new DBConnection();
 		Connection conn = dbConn.getConnection(db);
-		List list = new ArrayList();
-		
-		dbConn.getDBTableData(conn, tableName);
+        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();		
+		list=dbConn.getDBTableData(conn, tableName);
 		
 		//System.out.println(list);
 		return list;

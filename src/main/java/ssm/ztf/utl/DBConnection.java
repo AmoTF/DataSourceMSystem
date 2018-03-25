@@ -7,14 +7,11 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import net.sf.json.JSONArray;
-import net.sf.json.JsonConfig;
 import ssm.ztf.model.DB;
 
 /**
@@ -170,11 +167,8 @@ public class DBConnection {
 		List columnNameList = new ArrayList();
 		while (rs.next()) {
 			columnNameList.add(rs.getString("TYPE_NAME"));
-			/*System.out.print(rs.getString("COLUMN_NAME"));
-			System.out.print(rs.getString(":"));
-			System.out.println(rs.getString("TYPE_NAME"));*/
-
 		}
+		
 		return columnNameList;
 	}
 
@@ -201,10 +195,7 @@ public class DBConnection {
             }
             list.add(rowData);
         } 
-        JsonConfig jsonConfig = new JsonConfig();  
-        jsonConfig.registerJsonValueProcessor(Timestamp.class, new JsonDateValueProcessor());  
-        JSONArray jr = JSONArray.fromObject(list,jsonConfig);
-        System.out.println(jr);
+       
         return list;
     }
 	

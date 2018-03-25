@@ -1,20 +1,29 @@
 package ssm.ztf.controller;
 
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import net.sf.json.JSONArray;
+import net.sf.json.JsonConfig;
 import ssm.ztf.db.dao.RDBMSDao;
 import ssm.ztf.model.DB;
 import ssm.ztf.service.UserService;
+import ssm.ztf.utl.JsonDateValueProcessor;
 import ssm.ztf.utl.TreeNode;
 
 @Controller
@@ -32,32 +41,81 @@ public class UserController {
 		return "listDB";
 	}
 
+	// 跳转到数据源列表右边
+	@RequestMapping("empty")
+	public String getEmpty(HttpServletRequest request) {
+
+		return "empty";
+	}
+
 	// 根据id跳转到某个数据源页面
 	@RequestMapping("indexDB/{id}")
 	public String getindexDB(HttpServletRequest request, @PathVariable String id) {
-		
-		DB db= userService.queryDBListId(Integer.parseInt(id));
-		RDBMSDao RDBMSDao=new RDBMSDao();
-		List<TreeNode> list=RDBMSDao.getDB(db);
-		
+
+		DB db = userService.queryDBListId(Integer.parseInt(id));
+		RDBMSDao RDBMSDao = new RDBMSDao();
+		List<TreeNode> list = RDBMSDao.getDB(db);
+
 		JSONArray result = JSONArray.fromObject(list);
 
 		request.setAttribute("result", result);
-		//  System.out.println(result);
-
-		/*Iterator it = list.iterator();
-		while(it.hasNext()) {
-			  System.out.println(it.next());
-			}*/
+		request.setAttribute("id", id);
+		request.setAttribute("oid", "0");
+		request.setAttribute("tableName", "0");
 		return "indexDB";
 	}
 
+	@RequestMapping("indexDBTable/{id}/{tableName}")
+	public String toindexDBTable(HttpServletRequest request, String id, String tableName) {
+		System.out.println(id);
+		return "indexDBTable";
+
+	}
+
 	// 显示相应数据源的表结构
-	@RequestMapping("indexDBTable")
-	public String toindexDBTable(HttpServletRequest request,String tableName) {
+	@RequestMapping(value = "DBTableData/{id}/{tableName}", method = RequestMethod.GET)
+	public String getDBTableData(HttpServletRequest request, HttpServletResponse response, @PathVariable String id,
+			@PathVariable String tableName) {
+
+		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+		Set<String> colmunName = new HashSet<String>();  
+		DB db = new DB();
+		db = userService.queryDBListId(Integer.parseInt(id));
+		RDBMSDao RDBMSDao = new RDBMSDao();
+
+		try {
+			list = RDBMSDao.getDBTableData(db, tableName);
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		JsonConfig jsonConfig = new JsonConfig();
+		jsonConfig.registerJsonValueProcessor(Timestamp.class, new JsonDateValueProcessor());
+		JSONArray jr = JSONArray.fromObject(list, jsonConfig);
+		request.setAttribute("jr", jr);
 		
-		// List<DB> db = userService.getDBList();
-		// request.setAttribute("db", db);
+		Iterator iterator = jr.getJSONObject(0).keys();
+		int size=0;
+		while (iterator.hasNext()) {
+			String key = (String) iterator.next();
+			colmunName.add(key);
+			size++;
+		}
+		JSONArray colmun = JSONArray.fromObject(colmunName);
+		request.setAttribute("colmun", colmun);
+		request.setAttribute("size", size);
+		//System.out.println(colmun);
+		
+		/*if (jr.size() > 0) {
+			for (int i = 0; i < jr.size(); i++) {
+				// 遍历 jsonarray 数组，把每一个对象转成 json 对象
+				JSONObject job = jr.getJSONObject(i);
+				// 得到 每个对象中的属性值
+				System.out.println(job.get("id") + "=");
+			}
+		}*/
+
 		return "indexDBTable";
 	}
 
