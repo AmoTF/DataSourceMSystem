@@ -22,7 +22,7 @@ body {
 		<div class="pageColumn">
 			<table>
 				<thead>
-					<th></td>
+					<th></th>
 					<th width="10%">名称</th>
 					<th width="10%">标题</th>
 					<th>种类</th>
@@ -36,7 +36,7 @@ body {
 				</thead>
 				<tbody>
 					<c:forEach items="${db}" var="db">
-						<a href="${pageContext.request.contextPath}/index"></a><tr>
+						<tr>
 							<th class="checkBox"><input name="" type="checkbox" value="" /></th>
 							<td style="display:none;">${db.id}</td>
 							<td>${db.name}</td>
@@ -51,7 +51,7 @@ body {
 							<td width="3.5%"><a class="logon fright"
 				href="${pageContext.request.contextPath}/user/indexDB/${db.id}"> </a></td>
 						</tr>
-						</a>
+						
 					</c:forEach>
 				</tbody>
 			</table>

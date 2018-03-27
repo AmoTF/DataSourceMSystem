@@ -1,5 +1,6 @@
 package ssm.ztf.controller;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -20,9 +21,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JsonConfig;
+import ssm.ztf.db.dao.HDFSDao;
 import ssm.ztf.db.dao.RDBMSDao;
 import ssm.ztf.model.DB;
 import ssm.ztf.service.UserService;
+import ssm.ztf.utl.HDFS;
 import ssm.ztf.utl.JsonDateValueProcessor;
 import ssm.ztf.utl.TreeNode;
 
@@ -53,32 +56,44 @@ public class UserController {
 	public String getindexDB(HttpServletRequest request, @PathVariable String id) {
 
 		DB db = userService.queryDBListId(Integer.parseInt(id));
-		RDBMSDao RDBMSDao = new RDBMSDao();
-		List<TreeNode> list = RDBMSDao.getDB(db);
-
-		JSONArray result = JSONArray.fromObject(list);
-
-		request.setAttribute("result", result);
 		request.setAttribute("id", id);
-		request.setAttribute("oid", "0");
-		request.setAttribute("tableName", "0");
-		return "indexDB";
+
+		// 判断数据源类型
+		if (db.getDbType().equals("MySQL")) {
+			RDBMSDao RDBMSDao = new RDBMSDao();
+			List<TreeNode> list = RDBMSDao.getDB(db);
+			JSONArray result = JSONArray.fromObject(list);
+
+			request.setAttribute("result", result);
+
+			return "indexDB";
+		} else if (db.getDbType().equals("HDFS")) {
+			String server = "hdfs://" + db.getServer() + ":" + db.getPort() + "/";
+			List<HDFS> listFile = new ArrayList<HDFS>();
+
+			try {
+				HDFSDao HDFS = new HDFSDao(server);
+				listFile = HDFS.getFilesUnderFolder("/");
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			request.setAttribute("listFile", listFile);
+			return "indexHDFS";
+		}
+
+		return "error";
 	}
 
-	@RequestMapping("indexDBTable/{id}/{tableName}")
-	public String toindexDBTable(HttpServletRequest request, String id, String tableName) {
-		System.out.println(id);
-		return "indexDBTable";
-
-	}
-
-	// 显示相应数据源的表结构
+	// 显示相应数据源的表的数据
 	@RequestMapping(value = "DBTableData/{id}/{tableName}", method = RequestMethod.GET)
 	public String getDBTableData(HttpServletRequest request, HttpServletResponse response, @PathVariable String id,
 			@PathVariable String tableName) {
 
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
-		Set<String> colmunName = new HashSet<String>();  
+		Set<String> colmunName = new HashSet<String>();
 		DB db = new DB();
 		db = userService.queryDBListId(Integer.parseInt(id));
 		RDBMSDao RDBMSDao = new RDBMSDao();
@@ -94,9 +109,9 @@ public class UserController {
 		jsonConfig.registerJsonValueProcessor(Timestamp.class, new JsonDateValueProcessor());
 		JSONArray jr = JSONArray.fromObject(list, jsonConfig);
 		request.setAttribute("jr", jr);
-		
+
 		Iterator iterator = jr.getJSONObject(0).keys();
-		int size=0;
+		int size = 0;
 		while (iterator.hasNext()) {
 			String key = (String) iterator.next();
 			colmunName.add(key);
@@ -105,8 +120,7 @@ public class UserController {
 		JSONArray colmun = JSONArray.fromObject(colmunName);
 		request.setAttribute("colmun", colmun);
 		request.setAttribute("size", size);
-		//System.out.println(colmun);
-		
+
 		/*if (jr.size() > 0) {
 			for (int i = 0; i < jr.size(); i++) {
 				// 遍历 jsonarray 数组，把每一个对象转成 json 对象
@@ -117,6 +131,53 @@ public class UserController {
 		}*/
 
 		return "indexDBTable";
+	}
+
+	// HDFS操作
+	@RequestMapping(value = "HDFSOperating/{id}")
+	public String HDFSOperating(HttpServletRequest request, HttpServletResponse response, 
+			@PathVariable String id) {
+		
+		String path=request.getParameter("path");
+		String name=request.getParameter("name");
+        String isDir=request.getParameter("isDir");
+        
+        System.out.println(isDir);
+		System.out.println(name);
+        String dir=path+name;
+		DB db = userService.queryDBListId(Integer.parseInt(id));
+		String server = "hdfs://" + db.getServer() + ":" + db.getPort() + "/";
+		System.out.println(server);
+		HDFSDao HDFS;
+		try {
+			HDFS = new HDFSDao(server);
+			if(isDir.equals("File")){
+				HDFS.readFile(dir);
+			}else{
+				List<HDFS> listFile = HDFS.getFilesUnderFolder(dir);
+				request.setAttribute("listFile", listFile);
+				return "indexHDFS";
+
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			
+		return "listDB";
+	}
+	
+	@RequestMapping(value = "HDFSOperating1{name}")
+	public String HDFSOperating1(HttpServletRequest request, HttpServletResponse response, 
+			 @PathVariable String name) {
+		
+        String isDir=request.getParameter("isDir");
+		DB db = userService.queryDBListId(Integer.parseInt("2"));
+		String server = "hdfs://" + db.getServer() + ":" + db.getPort() + "/";
+		System.out.println(name);
+		
+		
+		return "listDB";
 	}
 
 }

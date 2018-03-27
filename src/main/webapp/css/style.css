@@ -12,14 +12,22 @@ margin: 0;
 padding: 0;
 }
 /** 设置默认字体 **/
-body,button, input, select, textarea {
-font: 12px/1.5 '宋体',tahoma, Srial, helvetica, sans-serif; }
+/*body,button, input, select, textarea {
+font: 12px/1.5 '宋体',tahoma, Srial, helvetica, sans-serif; }*/
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #fff;
+}
 h1, h2, h3, h4, h5, h6 { font-size: 100%; }
 em{font-style:normal;}
 /** 重置列表元素 **/
 ul, ol { list-style: none; }
 /** 重置超链接元素 **/
-a { text-decoration: none; color:#000;}
+a { text-decoration: none; color:##198bc9;}
 a:hover { text-decoration: underline; color:#3363a7; }
 /** 重置图片元素 **/
 img{ border:0px;}
@@ -78,12 +86,20 @@ table { border-collapse: collapse; border-spacing: 0; }
 .pageColumn{ background:url(../images/page-bg.gif) repeat-x; }
 .pageColumn table{ width:100%}
 .pageColumn thead{ border:1px solid #bfd8e0; color:#075587; background:url(../images/page-thead-bg.gif);}
-.pageColumn thead th{ border-left:1px solid #c5dbe2; text-align:center; height:28px;}
+.pageColumn thead th{ border-left:1px solid #c5dbe2; text-align:center; height:35px;}
 .pageColumn tbody tr{ border:1px solid #bfd8e0; height:28px;}
 .pageColumn tbody .trLight{ background:#f9fcfd}
 .pageColumn tbody .checkBox{ background:#f1f7f9; border:1px solid #bfd8e0; text-align:center}
-.pageColumn tbody td{ border-left:1px solid #c5dbe2; text-align:center; height:28px;}
+.pageColumn tbody td{ border-left:1px solid #c5dbe2; text-align:center; height:35px;}
 
+.hdfsColumn{ background:url(../images/page-bg.gif) repeat-x; }
+.hdfsColumn table{ width:100%}
+.hdfsColumn thead{ border:1px solid #bfd8e0; color:#075587; background:url(../images/page-thead-bg.gif);}
+.hdfsColumn thead th{ border-left:0px solid #c5dbe2; text-align:center; height:35px;}
+.hdfsColumn tbody tr{ border:1px solid #bfd8e0; height:28px;}
+.hdfsColumn tbody .trLight{ background:#f9fcfd}
+.hdfsColumn tbody .checkBox{ background:#f1f7f9; border:1px solid #bfd8e0; text-align:center}
+.hdfsColumn tbody td{border-left:0px solid #c5dbe2;text-align:center; height:35px;}
 
 .logon{ width:29px; height:29px; background:url(../images/listDB-logon.png);}
 

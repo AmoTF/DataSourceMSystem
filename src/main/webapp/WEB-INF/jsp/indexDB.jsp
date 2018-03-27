@@ -96,7 +96,6 @@ var xxObj = document.frames;
 		
 	}
 	
-	
 	var newCount = 1;
 	function add(e) {
 		var zTree = $.fn.zTree.getZTreeObj("treeDemo"), isParent = e.data.isParent, nodes = zTree

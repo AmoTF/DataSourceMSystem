@@ -15,11 +15,6 @@
 		<div class="pageColumn">
 			<table>
 				<thead>
-					<!-- <c:forEach items="${colmun}" var="colmun" varStatus="status">
-						 <th>${colmun.get(id)}</th> 
-						<th>${colmun.get(id)}</th> 
-						<th>${colmun.get(id)}</th> 
-					</c:forEach> -->
 
 					<%
 						List colmun = (List) request.getAttribute("colmun");
