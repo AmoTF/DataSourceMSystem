@@ -134,19 +134,37 @@ public class HDFSDao {
 	}
 
 	// 读取文件
-	public void readFile(String uri) throws IOException {
+	public String readFile(String uri) throws IOException {
 
+	
 		// 判断文件是否存在
 		if (!hdfs.exists(new Path(uri))) {
 			System.out.println("Error ; the file not exists.");
-			return;
+			return null;
 		}
+		
 		InputStream in = null;
+		BufferedReader br = null;
+		StringBuffer resultBuffer = new StringBuffer();
+		String data = null;
+		resultBuffer.append("\n");
+
 		try {
 			in = hdfs.open(new Path(uri));
-			BufferedReader bf = new BufferedReader(new InputStreamReader(in, "GB2312"));// 防止中文乱码
+			if (in != null){
+				br =  new BufferedReader(new InputStreamReader(in));
+				while ((data = br.readLine()) != null) {
+					resultBuffer.append(data + "\n");
+				}
+			}
+			
+			System.out.println(resultBuffer.toString());
+			/*BufferedReader bf = new BufferedReader(new InputStreamReader(in, "GB2312"));// 防止中文乱
+			while ((data = br.readLine()) != null) {
+				resultBuffer.append(data + "\n");
+			}*/
 			// 复制到标准输出流
-			IOUtils.copyBytes(in, System.out, 4096, false);
+			//IOUtils.copyBytes(in, System.out, 4096, false);
 			/*String line = null;
 			while((line = bf.readLine()) != null){
 			    System.out.println(line);
@@ -156,6 +174,8 @@ public class HDFSDao {
 		} finally {
 			IOUtils.closeStream(in);
 		}
+		return resultBuffer.toString();
+
 	}
 
 	// 文件重命名
@@ -188,13 +208,14 @@ public class HDFSDao {
 		HDFSDao o = new HDFSDao("hdfs://123.207.227.116:9000/");
 
 		try {
-			// o.uploadFile("D:\\bigdata\\test1.txt", "/test2");
-			// o.createDir("/test2/");
-			// o.downloadFile("/wmj/user_label.txt", "D:/hadfs");
-			// o.deleteFile("/test2");
-			// o.readFile("/test2");
+			// o.uploadFile("D:\\bigdata\\test2.txt", "/");
+			// o.createDir("/test/");
+			 //o.downloadFile("/wmj/user_label.txt", "D:/hadfs");
+			 //o.deleteFile("/test2.txt");
+			System.out.println("==========");
+			 o.readFile("/test2.txt");
 			// o.renameFile("/test2/test1.txt", "/test2/test2.txt");
-			o.getFilesUnderFolder("/bigdata");
+			//o.getFilesUnderFolder("/bigdata");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

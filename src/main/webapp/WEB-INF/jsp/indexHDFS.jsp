@@ -51,10 +51,7 @@ body {
 							<td><a
 								href="${pageContext.request.contextPath}/user/HDFSOperating/${id}?path=${listFile.path}&name=${listFile.name}&isDir=${listFile.isDir}">
 									${listFile.name}</a></td>
-
-
 						</tr>
-
 					</c:forEach>
 				</tbody>
 			</table>

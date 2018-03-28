@@ -142,8 +142,6 @@ public class UserController {
 		String name=request.getParameter("name");
         String isDir=request.getParameter("isDir");
         
-        System.out.println(isDir);
-		System.out.println(name);
         String dir=path+name;
 		DB db = userService.queryDBListId(Integer.parseInt(id));
 		String server = "hdfs://" + db.getServer() + ":" + db.getPort() + "/";
@@ -152,32 +150,25 @@ public class UserController {
 		try {
 			HDFS = new HDFSDao(server);
 			if(isDir.equals("File")){
-				HDFS.readFile(dir);
+				String content=HDFS.readFile(dir);
+				request.setAttribute("content", content);
+				request.setAttribute("dir", dir);
+				request.setAttribute("name", name);
+				return "fileContent";
+
 			}else{
 				List<HDFS> listFile = HDFS.getFilesUnderFolder(dir);
 				request.setAttribute("listFile", listFile);
 				return "indexHDFS";
-
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 			
-		return "listDB";
+		return "error";
 	}
 	
-	@RequestMapping(value = "HDFSOperating1{name}")
-	public String HDFSOperating1(HttpServletRequest request, HttpServletResponse response, 
-			 @PathVariable String name) {
-		
-        String isDir=request.getParameter("isDir");
-		DB db = userService.queryDBListId(Integer.parseInt("2"));
-		String server = "hdfs://" + db.getServer() + ":" + db.getPort() + "/";
-		System.out.println(name);
-		
-		
-		return "listDB";
-	}
+	
 
 }

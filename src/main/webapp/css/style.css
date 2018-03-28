@@ -1,6 +1,6 @@
 ﻿/*@import "menu.css";*/
 /** 清除内外边距  */
-body, h1, h2, h3, h4, h5, h6, hr, p,
+body,h1,  h2, h3, h4, h5, h6,hr, p,
 blockquote, /* structural elements 结构元素 */
 dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
 pre, /* text formatting elements 文本格式元素 */
@@ -22,7 +22,10 @@ body {
     color: #333;
     background-color: #fff;
 }
-h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+ h2, h3, h4, h5 { font-size: 100%; }
+h1, h6 {color: #2f332a;font-weight: bold;font-family: Helvetica, Arial, sans-serif;padding-bottom: 5px;}
+h1 {font-size: 24px;line-height: 34px;text-align: center;}
+h6 {font-weight: normal;font-size: 12px;letter-spacing: 1px;line-height: 24px;text-align: center;}
 em{font-style:normal;}
 /** 重置列表元素 **/
 ul, ol { list-style: none; }
@@ -102,6 +105,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 .hdfsColumn tbody td{border-left:0px solid #c5dbe2;text-align:center; height:35px;}
 
 .logon{ width:29px; height:29px; background:url(../images/listDB-logon.png);}
+
+textarea.content {border: 0px solid #617775;background: #f0f6e4;font-size:20 ;width:100%;height:100%;overflow: hidden;}
 
 /*.pageColumn tbody td{ text-align:center;}*/
 /* .pageColumn */
