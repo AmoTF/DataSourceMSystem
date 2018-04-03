@@ -21,7 +21,6 @@
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/js/jquery.ztree.exedit.js"></script>
 <SCRIPT type="text/javascript">
-var xxObj = document.frames;
 
 	var setting = {
 		view : {

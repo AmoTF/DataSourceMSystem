@@ -12,7 +12,8 @@
 	<!-- 导入外部的properties文件 -->
 	<context:property-placeholder location="classpath:jdbc.properties" />
 
-	<!-- 自动扫描service包下的所有类 -->
-	<context:component-scan base-package="ssm.ztf.service" />
+	<!-- 自动扫描service包下的所有类-->
+	<context:component-scan base-package="ssm.ztf.service" /> 
+
 
 </beans>

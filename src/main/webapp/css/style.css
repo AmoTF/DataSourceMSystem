@@ -4,12 +4,12 @@ body,h1,  h2, h3, h4, h5, h6,hr, p,
 blockquote, /* structural elements 结构元素 */
 dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
 pre, /* text formatting elements 文本格式元素 */
-form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+form, fieldset, legend, button, /*input,*/ textarea, /* form elements 表单元素 */
 th, td, /* table elements 表格元素 */
 img/* img elements 图片元素 */{
 border:medium none;
 margin: 0;
-padding: 0;
+padding: 1 px;
 }
 /** 设置默认字体 **/
 /*body,button, input, select, textarea {
@@ -61,7 +61,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .subnav{ height:27px; background:url(../images/index-subnav-bg.gif)}
 .subnav .subnavLeft{ width:17px; height:27px; background:url(../images/index-subnav-left.gif)}
 .subnav .subnavRight{ width:17px; height:27px; background:url(../images/index-subnav-right.gif)}
-.menu{ width:168px; height:495px; background:#e6f4fa; color:#075587; margin-left:5px;}
+.menu{ width:168px; height:495px; background:#e6f4fa; color:#075587;border-right: 1.5px solid #3aa4dc;/* margin-left:5px;*/;}
 .menu ul{ width:168px;}
 .menu ul li{ width:168px; background:url(../images/index-menu-bg.gif) no-repeat; text-align:center}
 .menu ul li a{ height:26px; line-height:26px; color:#075587}
@@ -75,7 +75,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .sidebar{ width:5px; height:500px;}
 .sidebar .btn{ width:5px; height:39px; background:url(../images/sidebar-on.gif); margin-top:200px;}
 .sidebar .btn:hover{ background-position:0 -39px;}
-.page{ width:100%; height:500px; background:#198bc9}
+.page{ width:100%; height:500px; /*background:#198bc9*/}
 .page iframe{ margin:0 auto;}
 #content .space{ height:5px; font-size:0px; background:#198bc9}
 #footer{ width:100%; height:26px; line-height:26px; background:url(../images/index-footer-bg.gif);}

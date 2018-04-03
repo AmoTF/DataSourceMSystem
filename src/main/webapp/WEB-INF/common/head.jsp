@@ -19,9 +19,9 @@
 			<div class="nav fleft">
 				<ul>
 					<div class="nav-left fleft"></div>
-					<a href="${pageContext.request.contextPath}/user/listDB"><li class="first">我的主页</li></a>
-					<a href="${pageContext.request.contextPath}/user/listDB"><li>数据源配置管理</li></a>
-					<li>内容</li>
+					<li class="first"><a href="${pageContext.request.contextPath}/index">我的主页</a></li>
+					<li><a href="${pageContext.request.contextPath}/user/listDB">数据源配置管理</a></li>
+					<li><a href="${pageContext.request.contextPath}/dataMigration/index">数据迁移</a></li>
 					<li>用户</li>
 					<li>扩展</li>
 					<li>应用</li>
