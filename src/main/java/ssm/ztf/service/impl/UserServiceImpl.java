@@ -1,5 +1,6 @@
 package ssm.ztf.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,9 +43,11 @@ public class  UserServiceImpl implements UserService  {
 		return db;
 	}
 	
+	//获得所有的关系型数据库
+	public List<DB> queryAllDB(){
+		List<DB> list=userDao.queryAllDB(); 
+		return list;
+	}
 	
-	
-	
-
 	
 }

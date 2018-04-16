@@ -3,6 +3,7 @@ package ssm.ztf.db.dao;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -16,9 +17,8 @@ import ssm.ztf.utl.TreeNode;
  */
 public class RDBMSDao {
 
-	
-	public List<TreeNode> getDB(DB db){
-		
+	public List<TreeNode> getDB(DB db) {
+
 		DBConnection dbConn = new DBConnection();
 		Connection conn = dbConn.getConnection(db);
 
@@ -72,21 +72,56 @@ public class RDBMSDao {
 				}
 			}
 		}
-		return  list;
-
-	}		
-	
-	public List<Map<String, Object>> getDBTableData(DB db,String tableName) throws SQLException{
-		
-		DBConnection dbConn = new DBConnection();
-		Connection conn = dbConn.getConnection(db);
-        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();		
-		list=dbConn.getDBTableData(conn, tableName);
-		
-		//System.out.println(list);
 		return list;
 
 	}
 
-	
+	public List<Map<String, Object>> getDBTableData(DB db, String tableName) throws SQLException {
+
+		DBConnection dbConn = new DBConnection();
+		Connection conn = dbConn.getConnection(db);
+		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+		list = dbConn.getDBTableData(conn, tableName);
+
+		// System.out.println(list);
+		return list;
+
+	}
+
+	public List<TreeNode> getAllGDB(List<DB> list) {
+
+		List<TreeNode> treeDB = new ArrayList<TreeNode>();
+		DBConnection dbConn = new DBConnection();
+		Iterator it = list.iterator();
+		int id_1 = 1;
+
+		while (it.hasNext()) {
+			DB db = (DB) it.next();
+			TreeNode treeNode = new TreeNode();
+			treeNode.setId(id_1);
+			treeNode.setpId(0);
+			treeNode.setName(db.getName());
+			treeDB.add(treeNode);
+			Connection conn = dbConn.getConnection(db);
+			try {
+				List tableList = dbConn.getTableNameList(conn);
+				int id_2 = id_1 * 100 + 1;
+				for (int i = 0; i < tableList.size(); i++) {
+					String tableName = (String) tableList.get(i);
+					TreeNode tableNode = new TreeNode();
+					tableNode.setId(id_2);
+					tableNode.setpId(id_1);
+					tableNode.setName(tableName);
+					treeDB.add(tableNode);
+					id_2++;
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			id_1++;
+		}
+		return treeDB;
+	}
+
 }

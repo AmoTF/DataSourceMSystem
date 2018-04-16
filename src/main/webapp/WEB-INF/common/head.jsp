@@ -22,9 +22,8 @@
 					<li class="first"><a href="${pageContext.request.contextPath}/index">我的主页</a></li>
 					<li><a href="${pageContext.request.contextPath}/user/listDB">数据源配置管理</a></li>
 					<li><a href="${pageContext.request.contextPath}/dataMigration/index">数据迁移</a></li>
-					<li>用户</li>
-					<li>扩展</li>
-					<li>应用</li>
+					<li><a href="#">用户管理</a></li>
+
 					<div class="nav-right fleft"></div>
 				</ul>
 			</div>
@@ -33,7 +32,7 @@
 			<div class="clear"></div>
 			<div class="subnav">
 				<div class="fleft"></div>
-				${user.userName}
+				${user.userName} &nbsp欢迎登陆！
 
 			</div>
 		</div>

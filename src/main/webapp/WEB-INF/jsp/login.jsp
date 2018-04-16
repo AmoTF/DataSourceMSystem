@@ -55,9 +55,6 @@
 	<script type="text/javascript"
 		src="${pageContext.request.contextPath}/js/login.js"></script>
 
-	<div
-		style="text-align: center; margin: 50px 0; font: normal 14px/24px 'MicroSoft YaHei';">
-		<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
-	</div>
+	
 </body>
 </html>

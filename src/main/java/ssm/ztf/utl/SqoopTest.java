@@ -1,4 +1,6 @@
-package com.ztf.hadoop.hdfs;
+package ssm.ztf.utl;
+
+import java.io.File;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.sqoop.Sqoop;
@@ -13,6 +15,13 @@ public class SqoopTest {
 
 	 public boolean   importDataFromMysql() throws Exception {
 		 
+		 String curClasspath = System.getProperty ("java.class.path");
+		 
+         curClasspath = curClasspath
+                        + File.pathSeparator
+                        + "/var/www/webapps/***/WEB-INF/lib/hadoop-common-2.7.5.jar"
+                        + File.pathSeparator
+                        + "/var/www/webapps/***/WEB-INF/lib/hadoop-mapreduce-client-core-2.6.0-cdh5.5.2.jar";
 		
 		 	String database="bigdata";
 		 	String table ="bigdata";

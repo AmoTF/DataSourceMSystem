@@ -1,4 +1,4 @@
-package com.ztf.hadoop.hdfs;
+package ssm.ztf.utl;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,17 +13,13 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IOUtils;
 import org.junit.Test;
 
-public class OperatingFiles {
-
+public class OperatingHDFS {
 	
-
-	OperatingFiles() {
+	OperatingHDFS() {
 	}
 
-	
-
 	// 上传本地文件
-	public void uploadFile(String src, String dst,FileSystem hdfs) throws IOException {
+	public static void uploadFile(String src, String dst,FileSystem hdfs) throws IOException {
 
 		Path srcPath = new Path(src); // 原路径
 		Path dstPath = new Path(dst); // 目标路径
@@ -38,7 +34,7 @@ public class OperatingFiles {
 	}
 
 	// 创建hdfs目录
-	public void createDir(String dir,FileSystem hdfs) throws IOException {
+	public static void createDir(String dir,FileSystem hdfs) throws IOException {
 
 		Path path = new Path(dir);
 		if (hdfs.exists(path)) {
@@ -49,7 +45,7 @@ public class OperatingFiles {
 
 	// 从HDFS 下载文件 到本地
 	@Test
-	public void downloadFile(String hdfsDst, String localSrc,FileSystem hdfs) throws IllegalArgumentException, IOException {
+	public static void downloadFile(String hdfsDst, String localSrc,FileSystem hdfs) throws IllegalArgumentException, IOException {
 
 		Path dst = new Path(hdfsDst);
 		Path src = new Path(localSrc);
@@ -82,7 +78,7 @@ public class OperatingFiles {
 	}
 
 	// 读取文件
-    public void readFile(String uri,FileSystem hdfs) throws IOException{
+    public static void readFile(String uri,FileSystem hdfs) throws IOException{
         
         //判断文件是否存在
         if(!hdfs.exists(new Path(uri))){
@@ -106,8 +102,7 @@ public class OperatingFiles {
         }
     }
  // 文件重命名
-
-    public void renameFile(String oldName,String newName,FileSystem hdfs) throws IOException{
+    public static void renameFile(String oldName,String newName,FileSystem hdfs) throws IOException{
         
         Path oldPath = new Path(oldName);
         Path newPath = new Path(newName);
@@ -119,7 +114,7 @@ public class OperatingFiles {
         }
     }
 	// 判断文件是否存在，存在即删除
-	public void deleteFile(String fileName,FileSystem hdfs) throws IOException {
+	public static void deleteFile(String fileName,FileSystem hdfs) throws IOException {
 
 		Path f = new Path(fileName);
 		boolean isExists = hdfs.exists(f);

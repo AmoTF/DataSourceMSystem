@@ -13,23 +13,35 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IOUtils;
 import org.junit.Test;
 
-public class OperatingFiles {
+public class OperatingHDFS {
 
-	
+	Configuration conf;
+	FileSystem hdfs;
 
-	OperatingFiles() {
+	OperatingHDFS() {
 	}
 
-	
+	public OperatingHDFS(String fsDefaultName) throws IOException {
+
+		conf = new Configuration();
+		conf.set("fs.default.name", fsDefaultName);
+		hdfs = FileSystem.get(conf);
+		// 以下两行是支持 hdfs的追加 功能的：hdfs.append()
+		conf.set("dfs.client.block.write.replace-datanode-on-failure.policy", "NEVER");
+		conf.set("dfs.client.block.write.replace-datanode-on-failure.enable", "true");
+	}
 
 	// 上传本地文件
-	public void uploadFile(String src, String dst,FileSystem hdfs) throws IOException {
+	public void uploadFile(String src, String dst) throws IOException {
 
 		Path srcPath = new Path(src); // 原路径
 		Path dstPath = new Path(dst); // 目标路径
 		// 调用文件系统的文件复制函数,前面参数是指是否删除原文件，true为删除，默认为false
 		hdfs.copyFromLocalFile(false, srcPath, dstPath);
 
+		// 打印文件路径
+		System.out.println("Upload to " + conf.get("fs.default.name"));
+		System.out.println("------------list files------------" + "\n");
 		FileStatus[] fileStatus = hdfs.listStatus(dstPath);
 		for (FileStatus file : fileStatus) {
 			System.out.println(file.getPath());
@@ -38,18 +50,20 @@ public class OperatingFiles {
 	}
 
 	// 创建hdfs目录
-	public void createDir(String dir,FileSystem hdfs) throws IOException {
+	public void createDir(String dir) throws IOException {
 
 		Path path = new Path(dir);
 		if (hdfs.exists(path)) {
+			System.out.println("dir \t" + conf.get("fs.default.name") + dir + "\t already exists");
 			return;
 		}
 		hdfs.mkdirs(path);
+		System.out.println("new dir \t" + conf.get("fs.default.name") + dir);
 	}
 
 	// 从HDFS 下载文件 到本地
 	@Test
-	public void downloadFile(String hdfsDst, String localSrc,FileSystem hdfs) throws IllegalArgumentException, IOException {
+	public void downloadFile(String hdfsDst, String localSrc) throws IllegalArgumentException, IOException {
 
 		Path dst = new Path(hdfsDst);
 		Path src = new Path(localSrc);
@@ -82,7 +96,7 @@ public class OperatingFiles {
 	}
 
 	// 读取文件
-    public void readFile(String uri,FileSystem hdfs) throws IOException{
+    public void readFile(String uri) throws IOException{
         
         //判断文件是否存在
         if(!hdfs.exists(new Path(uri))){
@@ -107,7 +121,7 @@ public class OperatingFiles {
     }
  // 文件重命名
 
-    public void renameFile(String oldName,String newName,FileSystem hdfs) throws IOException{
+    public void renameFile(String oldName,String newName) throws IOException{
         
         Path oldPath = new Path(oldName);
         Path newPath = new Path(newName);
@@ -119,7 +133,7 @@ public class OperatingFiles {
         }
     }
 	// 判断文件是否存在，存在即删除
-	public void deleteFile(String fileName,FileSystem hdfs) throws IOException {
+	public void deleteFile(String fileName) throws IOException {
 
 		Path f = new Path(fileName);
 		boolean isExists = hdfs.exists(f);
@@ -128,6 +142,22 @@ public class OperatingFiles {
 			System.out.println(fileName + "  delete? \t" + isDel);
 		} else {
 			System.out.println(fileName + "  exist? \t" + "notExists");
+		}
+	}
+
+	public static void main(String[] args) throws IOException {
+		OperatingHDFS o = new OperatingHDFS("hdfs://123.207.227.116:9000/");
+		
+		try {
+			// o.uploadFile("D:\\bigdata\\test1.txt", "/test2");
+			// o.createDir("/test2/");
+			// o.downloadFile("/wmj/user_label.txt", "D:/hadfs");
+			//o.deleteFile("/test2");
+			o.readFile("/test2");
+			//o.renameFile("/test2/test1.txt", "/test2/test2.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 

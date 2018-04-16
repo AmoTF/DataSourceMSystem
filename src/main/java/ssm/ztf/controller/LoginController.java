@@ -59,7 +59,6 @@ public class LoginController {
 				}
 			}
 		} else {
-			System.out.println(111);
 			try {
 				out = response.getWriter();
 				out.print("error");

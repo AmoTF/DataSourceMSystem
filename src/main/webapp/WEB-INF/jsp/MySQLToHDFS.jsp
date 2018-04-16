@@ -20,7 +20,29 @@
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/js/jquery.ztree.exedit.js"></script>-->
 
+<style type="text/css">
+div.pos_exp
+{
+position:absolute;
+left:680 !important;
+top:165px !important
+}
 
+div.pos_input
+{
+position:absolute;
+left:280px !important;
+top:165px !important
+}
+
+div.pos_button
+{
+position:absolute;
+left:550px !important;
+top:400px !important;
+}
+
+</style>
 <SCRIPT type="text/javascript">
 
 		var setting = {
@@ -39,31 +61,11 @@
 		};
 		var $j = jQuery.noConflict();
 
-		var zNodes =[
-			{id:1, pId:0, name:"北京"},
-			{id:2, pId:0, name:"天津"},
-			{id:3, pId:0, name:"上海"},
-			{id:6, pId:0, name:"重庆"},
-			{id:4, pId:0, name:"河北省", open:true},
-			{id:41, pId:4, name:"石家庄"},
-			{id:42, pId:4, name:"保定"},
-			{id:43, pId:4, name:"邯郸"},
-			{id:44, pId:4, name:"承德"},
-			{id:5, pId:0, name:"广东省", open:true},
-			{id:51, pId:5, name:"广州"},
-			{id:52, pId:5, name:"深圳"},
-			{id:53, pId:5, name:"东莞"},
-			{id:54, pId:5, name:"佛山"},
-			{id:6, pId:0, name:"福建省", open:true},
-			{id:61, pId:6, name:"福州"},
-			{id:62, pId:6, name:"厦门"},
-			{id:63, pId:6, name:"泉州"},
-			{id:64, pId:6, name:"三明"}
-		 ];
+		var zNodes =${AllGDB}
+			
 
 		function beforeClick(treeId, treeNode) {
 			var check = (treeNode && !treeNode.isParent);
-			if (!check) alert("只能选择城市...");
 			return check;
 		}
 		
@@ -71,18 +73,19 @@
 			var zTree = $j.fn.zTree.getZTreeObj("treeDemo"),
 			nodes = zTree.getSelectedNodes(),
 			v = "";
+			var zTreeParent=treeNode.getParentNode().name;
 			nodes.sort(function compare(a,b){return a.id-b.id;});
 			for (var i=0, l=nodes.length; i<l; i++) {
 				v += nodes[i].name + ",";
 			}
 			if (v.length > 0 ) v = v.substring(0, v.length-1);
-			var cityObj = $j("#citySel");
-			cityObj.attr("value", v);
+			var cityObj = $j("#inputSource");
+			cityObj.attr("value", zTreeParent+":"+v);
 		}
 
 		function showMenu() {
-			var cityObj = $j("#citySel");
-			var cityOffset = $j("#citySel").offset();
+			var cityObj = $j("#inputSource");
+			var cityOffset = $j("#inputSource").offset();
 			$j("#menuContent").css({left:cityOffset.left + "px", top:cityOffset.top + cityObj.outerHeight() + "px"}).slideDown("fast");
 
 			$j("body").bind("mousedown", onBodyDown);
@@ -96,44 +99,101 @@
 				hideMenu();
 			}
 		}
+		
+		function showRMenu() {
+			var cityObj = $j("#exportSource");
+			var cityOffset = $j("#exportSource").offset();
+			$j("#menuRightContent").css({left:cityOffset.left + "px", top:cityOffset.top + cityObj.outerHeight() + "px"}).slideDown("fast");
+
+			$j("body").bind("mousedown", onBodyDownR);
+		}
+		function hideRMenu() {
+			$j("#menuRightContent").fadeOut("fast");
+			$j("body").unbind("mousedown", onBodyDown);
+		}
+		function onBodyDownR(event) {
+			if (!(event.target.id == "menuBtnR" || event.target.id == "menuRightContent" || $j(event.target).parents("#menuRightContent").length>0)) {
+				hideRMenu();
+			}
+		}
 
 		$j(document).ready(function(){
 			//$j.fn.zTree.init($j("#treeDemo"), setting, zNodes);
 			$j.fn.zTree.init($j("#treeDemo"), setting, zNodes);
+			
+			
 		});
+		
 		
 	</SCRIPT>
 
 </head>
 
 <body>  
- 	<h1>文件${name}</h1>
-	<h6>[ 文件路径:${dir} ]</h6>
-	<div class="content_wrap">
-	<div class="zTreeDemoBackground left">
-		<ul class="list">
-			<li class="title">&nbsp;&nbsp;<span class="highlight_red">选择城市时，按下 Ctrl 或 Cmd 键可以进行多选</span></li>
-			<li class="title">&nbsp;&nbsp;城市：<input id="citySel" type="text" readonly value="" style="width:120px;"/>
+		<br><br><br>
+
+ 	<h1>关系型数据库迁移到HDFS</h1>
+ 			<br><br><br>
+ 	
+	<div class="content_wrap aligncenter" style="height:200px ! important ;width:1090px ! important">
+	<div class="zTreeDemoBackground left pos_input" style="height:200px ! important">
+		<ul class="list"> 
+			<li class="title">&nbsp;&nbsp;<span class="highlight_red">选择数据来源</span></li>
+			<br>
+			<li class="title">&nbsp;&nbsp;表名称：<input id="inputSource" type="text" readonly value="" style="width:120px;"/>
 		&nbsp;<a id="menuBtn" href="#" onclick="showMenu(); return false;">选择</a></li>
 		</ul>
 	</div>
-	<div class="right">
+	<div class="pos_exp" style="height:200px ! important ;width:550px ! important ">
 		<ul class="info">
-			<li class="title"><h2>实现方法说明</h2>
+			
+			    <input type="hidden" id="hdfsId" value="2"/>
 				<ul class="list">
-				<li>用 zTree 实现这种下拉菜单，应该说是比较容易的，你只需要控制 zTree 所在容器的隐藏/显示，以及位置即可。</li>
-				<li class="highlight_red">zTree v3.x 实现了多点选中功能，因此对于需要多选的下拉菜单也易如反掌。</li>
-				<li class="highlight_red">利用 setting 的各项配置参数，完全可以满足大部分的功能需求。</li>
+				<li class="title">&nbsp;&nbsp;<span class="highlight_red">选择数据存放地址</span></li>
+			    <br>
+				<li class="title">&nbsp;&nbsp;路径地址：<input id="exportSource" type="text"  value="" style="width:120px;"/>
 				</ul>
+				
 			</li>
 		</ul>
 	</div>
+</div>
+<div class="pos_button"><input style="height:35px;" id="dataMigration" name="dataMigration"  type="button" value="数据迁移"/>
 </div>
 
 <div id="menuContent" class="menuContent" style="display:none; position: absolute;">
 	<ul id="treeDemo" class="ztree" style="margin-top:0; width:160px;"></ul>
 </div>
-</body>
 
+</body>
+<SCRIPT type="text/javascript">
+
+$j("#dataMigration").click(function(){
+	var inputSource =document.getElementById("inputSource").value;
+	var exportSource=document.getElementById("exportSource").value;
+	var hdfsId=document.getElementById("hdfsId").value;
+	var source={}
+	source.inputSource=inputSource;
+	source.exportSource=exportSource;
+	source.hdfsId=hdfsId;
+	
+	$j.ajax({
+		url : '${pageContext.request.contextPath}/dataMigration/dataMySQLToHDFS',
+		type : 'post',
+		dataType : 'json', //数据类型为json格式
+		data : JSON.stringify(source),
+
+		success : function(data) {	
+			if( data.result=='error'){
+				alert('传输失败');
+			}else{
+			};
+		},
+		error : function() {
+			$j("#show").html("Error XMLHttpRequest");
+		}
+	});					
+  });
+</SCRIPT>
 
 </html>

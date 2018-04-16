@@ -15,4 +15,7 @@ public interface UserService {
 
 	// 通过Id查询数据源
 	public DB queryDBListId(int id);
+	
+	//获得所有的关系型数据库
+	public List<DB> queryAllDB();
 }

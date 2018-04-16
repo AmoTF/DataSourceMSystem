@@ -83,4 +83,18 @@ table { border-collapse: collapse; border-spacing: 0; }
 .pageColumn tbody .trLight{ background:#f9fcfd}
 .pageColumn tbody .checkBox{ background:#f1f7f9; border:1px solid #bfd8e0; text-align:center}
 .pageColumn tbody td{ text-align:center;}
+
+.alignleft { 
+display: inline; 
+float: left; 
+} 
+.alignright { 
+display: inline; 
+float: right; 
+} 
+.aligncenter { 
+clear: both; 
+display: block; 
+margin:auto; 
+} 
 /* .pageColumn */

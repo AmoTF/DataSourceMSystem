@@ -30,9 +30,10 @@ body {
             <li class="subMenu"><a href="#" target="right">标题标题标题</a></li>
         </ul>
     </div>
+    
     <div class="sidebar fleft"><div class="btn"></div></div>
     <div class="page">
-    <iframe width="100%" scrolling="auto" height="100%" frameborder="false" allowtransparency="true" style="border: medium none;" src="" id="rightMain" name="right"></iframe>
+    <iframe width="auto" scrolling="auto" height="533px" frameborder="false" allowtransparency="true" style="border: medium none;" src="" id="rightMain" name="right"></iframe>
     </div>
     </div><!--#content -->
     <div class="clear"></div>
